@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+// 色
+$color-main: #301F1B;  
+$color-white: #fff;
+$color-light: #666666;
+$color-dark: #333333;
+$color-header-text: #421F15;
+$color-btn-red: #C63205;
+$color-btn-brown: #603813;
+
+
+//レイアウト幅
+$layout-width: 1140px;
+$layout-width-inner: 1200px;
+
+//階層
+$layer:(
+  default:1,
+  modal: 100,
+  drawer: 40,
+);
+
+//余白
+$padding-pc: 24px;
+$padding-tab: 24px;
+$padding-sp: 16px;
+
+//高さ
+$section-height: 120px;
+$section-title-height: 60px;
+
+// フォントファミリー
+$font-family-default: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN w3", "Meiryo", "メイリオ", sans-serif;
+
+//基本フォント
+$font-size-base: 16px;  //基本のフォントサイズ
+$font-size-title: 36px;  //タイトルのフォントサイズ
+$font-weight-base: 400;  //基本のフォントの太さ
+$line-height-base: 1.6;  //line-height

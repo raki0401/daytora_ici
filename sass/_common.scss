@@ -1,0 +1,24 @@
+body {
+  font-family: $font-family-default;
+  font-size: $font-size-base;
+  color: $color-main;
+}
+
+.inner{
+  max-width: 810px;
+  margin: 0 auto;
+}
+
+a{
+  text-decoration: none;
+  color: #000000;
+}
+
+.btn-red{
+  background-color: $color-btn-red;
+  color: $color-white;
+  font-size: 14px;
+  padding: 21px 43px 19px 45px;
+}
+
+

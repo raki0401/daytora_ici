@@ -1,0 +1,23 @@
+@charset "UTF-8";
+body {
+  font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN w3", "Meiryo", "メイリオ", sans-serif;
+  font-size: 16px;
+  color: #301F1B;
+}
+
+.inner {
+  max-width: 810px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.btn-red {
+  background-color: #C63205;
+  color: #fff;
+  font-size: 14px;
+  padding: 21px 43px 19px 45px;
+}
