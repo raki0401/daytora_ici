@@ -1,0 +1,15 @@
+.header-nav ul{
+  display: flex;
+  justify-content: space-around;
+  padding: 38px 0 22px ;
+  max-width: 652px;
+  width: 100%;
+  margin: 0 auto;
+  
+  li{
+    margin-right: 45px;
+    &:last-child{
+      margin: 0;
+    }
+  }
+}

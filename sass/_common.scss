@@ -2,6 +2,7 @@ body {
   font-family: $font-family-default;
   font-size: $font-size-base;
   color: $color-main;
+  // background: url('../img/長方形\ 151@2x.png');
 }
 
 .inner{
@@ -11,7 +12,8 @@ body {
 
 a{
   text-decoration: none;
-  color: #000000;
+  color: #000;
+  cursor: pointer;
 }
 
 .btn-red{
@@ -19,6 +21,7 @@ a{
   color: $color-white;
   font-size: 14px;
   padding: 21px 43px 19px 45px;
+  cursor: pointer;
 }
 
 
