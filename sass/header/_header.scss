@@ -1,0 +1,103 @@
+header{
+
+  height: 90px;
+}
+.header-nav ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 23px 0 22px;
+  max-width: 652px;
+  width: 100%;
+  margin: 0 auto;
+  
+  li {
+    font-size: 22px;
+    line-height: 20px;
+    // padding-top: 1px;
+    &:last-child {
+      margin: 0;
+    }
+    @include mq-1000(){
+      font-size: 18px;
+      font-weight: bold;
+    }
+   
+  }
+}
+
+.header-nav-top {
+  color: $color-header-text;
+  text-align: center;
+  &::before {
+    content: "トップ";
+    display: block;
+    font-size: 12px;
+
+    @include mq-1000(){
+      font-size: 10px;
+    }
+  }
+}
+.header-nav-news {
+  color: $color-header-text;
+  text-align: center;
+  &::before {
+    content: "ニュース";
+    display: block;
+    font-size: 12px;
+    @include mq-1000(){
+      font-size: 10px;
+    }
+  }
+}
+.header-nav-story {
+  color: $color-header-text;
+  text-align: center;
+  &::before {
+    content: "ストーリー";
+    display: block;
+    font-size: 12px;
+    @include mq-1000(){
+      font-size: 10px;
+    }
+  }
+}
+.header-nav-comments {
+  color: $color-header-text;
+  text-align: center;
+  &::before {
+    content: "著名人コメント";
+    display: block;
+    font-size: 12px;
+    @include mq-1000(){
+      font-size: 10px;
+    }
+  }
+}
+.header-nav-cast {
+  color: $color-header-text;
+  text-align: center;
+  &::before {
+    content: "キャスト";
+    display: block;
+    font-size: 12px;
+    @include mq-1000(){
+      font-size: 10px;
+    }
+  }
+}
+.header-nav-inquiry {
+  color: $color-header-text;
+  text-align: center;
+  &::before {
+    content: "問い合わせ";
+    display: block;
+    font-size: 12px;
+  @include mq-1000(){
+    font-size: 10px;
+  }    
+  }
+}
+
+
+

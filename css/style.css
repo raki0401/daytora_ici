@@ -3,6 +3,7 @@ body {
   font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN w3", "Meiryo", "メイリオ", sans-serif;
   font-size: 16px;
   color: #301F1B;
+  background: url("../img/長方形 151@2x.png");
 }
 
 .inner {
@@ -24,27 +25,198 @@ a {
   cursor: pointer;
 }
 
+header {
+  height: 90px;
+}
+
 .header-nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding: 38px 0 22px;
+  padding: 23px 0 22px;
   max-width: 652px;
   width: 100%;
   margin: 0 auto;
 }
 
 .header-nav ul li {
-  margin-right: 45px;
+  font-size: 22px;
+  line-height: 20px;
 }
 
 .header-nav ul li:last-child {
   margin: 0;
 }
 
+@media (max-width: 1000px) {
+  .header-nav ul li {
+    font-size: 18px;
+    font-weight: bold;
+  }
+}
+
+.header-nav-top {
+  color: #421F15;
+  text-align: center;
+}
+
+.header-nav-top::before {
+  content: "トップ";
+  display: block;
+  font-size: 12px;
+}
+
+@media (max-width: 1000px) {
+  .header-nav-top::before {
+    font-size: 10px;
+  }
+}
+
+.header-nav-news {
+  color: #421F15;
+  text-align: center;
+}
+
+.header-nav-news::before {
+  content: "ニュース";
+  display: block;
+  font-size: 12px;
+}
+
+@media (max-width: 1000px) {
+  .header-nav-news::before {
+    font-size: 10px;
+  }
+}
+
+.header-nav-story {
+  color: #421F15;
+  text-align: center;
+}
+
+.header-nav-story::before {
+  content: "ストーリー";
+  display: block;
+  font-size: 12px;
+}
+
+@media (max-width: 1000px) {
+  .header-nav-story::before {
+    font-size: 10px;
+  }
+}
+
+.header-nav-comments {
+  color: #421F15;
+  text-align: center;
+}
+
+.header-nav-comments::before {
+  content: "著名人コメント";
+  display: block;
+  font-size: 12px;
+}
+
+@media (max-width: 1000px) {
+  .header-nav-comments::before {
+    font-size: 10px;
+  }
+}
+
+.header-nav-cast {
+  color: #421F15;
+  text-align: center;
+}
+
+.header-nav-cast::before {
+  content: "キャスト";
+  display: block;
+  font-size: 12px;
+}
+
+@media (max-width: 1000px) {
+  .header-nav-cast::before {
+    font-size: 10px;
+  }
+}
+
+.header-nav-inquiry {
+  color: #421F15;
+  text-align: center;
+}
+
+.header-nav-inquiry::before {
+  content: "問い合わせ";
+  display: block;
+  font-size: 12px;
+}
+
+@media (max-width: 1000px) {
+  .header-nav-inquiry::before {
+    font-size: 10px;
+  }
+}
+
 .top {
-  background: url(../../img/ヒーローエリア背景@2x.jpg) no-repeat center center/cover;
-  height: 520px;
+  background: url(../../img/211@2x.jpg) no-repeat center center/cover;
+  min-height: 60vh;
+}
+
+.top-inner {
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 950px) {
+  .main-title {
+    text-align: center;
+  }
+}
+
+.main-title img {
+  padding-top: 60px;
+  width: 920px;
+}
+
+@media screen and (max-width: 950px) {
+  .main-title img {
+    width: 100%;
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .top-text-left {
+    text-align: center;
+  }
+}
+
+.top-text-left img {
+  padding-top: 184px;
+  padding-bottom: 60px;
+  width: 370px;
+}
+
+@media screen and (max-width: 950px) {
+  .top-text-left img {
+    width: 50%;
+    padding-top: 40px;
+  }
+}
+
+.top-text-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.top-text-right {
+  margin-left: 210px;
+  margin-top: 60px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 1.5;
 }

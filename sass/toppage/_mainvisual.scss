@@ -1,4 +1,54 @@
-.top{
-  background: url(../../img/ヒーローエリア背景@2x.jpg) no-repeat center center/cover;
-  height: 520px;
+.top {
+  background: url(../../img/211@2x.jpg) no-repeat center center/cover;
+  min-height: 60vh;
+}
+
+.top-inner {
+  max-width: 920px;
+  margin: 0 auto;
+  // padding: 0 100px;
+}
+
+.main-title {
+  // text-align: center;
+  @media screen and (max-width: 950px) {
+    text-align: center;
+  }
+  img {
+    // margin-left: 110px;
+    padding-top: 60px;
+    width: 920px;
+    @media screen and (max-width: 950px) {
+      width: 100%;
+      padding-right: 60px;
+      padding-left: 60px;
+    }
+  }
+}
+
+.top-text-left {
+  @media screen and (max-width: 950px) {
+    text-align: center;
+  }
+  img {
+    // margin-left: 110px;
+    padding-top: 184px;
+    padding-bottom: 60px;
+    width: 370px;
+    @media screen and (max-width: 950px) {
+      width: 50%;
+      padding-top: 40px;
+    }
+  }
+}
+
+.top-text-wrap {
+  display: flex;
+}
+.top-text-right {
+  margin-left: 210px;
+  margin-top: 60px;
+  color: $color-white;
+  font-size: 14px;
+  line-height: 1.5;
 }
