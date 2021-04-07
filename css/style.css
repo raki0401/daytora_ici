@@ -258,6 +258,40 @@ header {
 
 .intro-inner {
   margin-top: 60px;
-  background-color: rgba(255, 255, 255, 0.29);
-  background: url(../../img/左上画像装飾@2x.png) no-repeat left/contain;
+  background-color: rgba(255, 255, 255, 0.29) !important;
+  background: url(../../img/左上画像装飾@2x.png) no-repeat top left/150px;
+  width: 85%;
+  margin: 60px auto 0;
+}
+
+.introduction-title {
+  font-size: 43px;
+  line-height: 1.53;
+  padding-top: 26px;
+  text-align: center;
+  font-family: "Futura-CondensedMedium", "Futura", sans-serif;
+}
+
+@media (max-width: 767px) {
+  .introduction-title {
+    font-size: 30px;
+  }
+}
+
+.introduction-sub-title {
+  font-size: 34px;
+  line-height: 46px;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .introduction-sub-title {
+    font-size: 25px;
+  }
+}
+
+.introduction-text-wrap {
+  padding: 25px 30px 30px;
+  line-height: 1.75;
+  font-size: 12px;
 }
