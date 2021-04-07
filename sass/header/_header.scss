@@ -1,13 +1,35 @@
 header{
-
   height: 90px;
 }
+
+// .nav-wrap{
+//   position: relative;
+// }
+
+// .header-nav{
+//   width: 100%;
+//   overflow-x: auto;
+//   -webkit-overflow-scrolling: touch; /* 慣性スクロール */
+// }
+.nav-wrap{
+  width: 100%;
+  overflow: hidden;
+}
+
+.header-nav{
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
 .header-nav ul {
   display: flex;
   justify-content: space-around;
   padding: 23px 0 22px;
-  max-width: 652px;
-  width: 100%;
+  // max-width: 652px;
+  // width: 100%;
+  width: 600px;
+  // min-width: 600px;
   margin: 0 auto;
   
   li {

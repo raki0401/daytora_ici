@@ -29,6 +29,17 @@ header {
   height: 90px;
 }
 
+.nav-wrap {
+  width: 100%;
+  overflow: hidden;
+}
+
+.header-nav {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
 .header-nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -36,8 +47,7 @@ header {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   padding: 23px 0 22px;
-  max-width: 652px;
-  width: 100%;
+  width: 600px;
   margin: 0 auto;
 }
 
@@ -239,4 +249,15 @@ header {
   .top-text-right p {
     padding: 0 40px;
   }
+}
+
+.top-btn {
+  padding-top: 30px;
+  text-align: right;
+}
+
+.intro-inner {
+  margin-top: 60px;
+  background-color: rgba(255, 255, 255, 0.29);
+  background: url(../../img/左上画像装飾@2x.png) no-repeat left/contain;
 }
