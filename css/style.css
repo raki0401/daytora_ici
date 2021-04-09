@@ -25,6 +25,11 @@ a {
   cursor: pointer;
 }
 
+.section-title {
+  font-size: 43px;
+  text-align: center;
+}
+
 header {
   height: 90px;
 }
@@ -261,7 +266,7 @@ header {
   background-color: rgba(255, 255, 255, 0.29) !important;
   background: url(../../img/左上画像装飾@2x.png) no-repeat top left/150px;
   width: 85%;
-  margin: 60px auto 0;
+  margin: 60px auto 56px;
 }
 
 .introduction-title {
@@ -294,4 +299,67 @@ header {
   padding: 25px 30px 30px;
   line-height: 1.75;
   font-size: 12px;
+}
+
+.news {
+  margin-bottom: 62px;
+}
+
+.news-inner {
+  position: relative;
+}
+
+.news-title {
+  margin-bottom: 27px;
+}
+
+.news-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.news-item img {
+  width: 250px;
+  height: 140px;
+}
+
+.flex {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-img {
+  height: 88px !important;
+  width: 156px !important;
+}
+
+.news-item-bottom {
+  margin-top: -4px;
+  background-color: #fff;
+  padding: 14px 15px 50px;
+}
+
+.news-item-bottom time {
+  font-size: 12px;
+}
+
+.news-item-bottom h4 {
+  font-weight: 600;
+}
+
+.news-item-bottom-only2 {
+  margin: 0;
+  height: 88px;
+}
+
+.news-btn-red {
+  position: absolute;
+  top: 6px;
+  right: 0;
+  padding: 10px 21px 11px;
 }
