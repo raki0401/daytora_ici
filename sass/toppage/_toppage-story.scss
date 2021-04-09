@@ -1,0 +1,30 @@
+.story{
+  background: url(../../img/story-img@2x.jpg)no-repeat left center / cover;
+  padding-top: 26px;
+  padding-bottom: 50px;
+}
+
+.story-title{
+  margin-bottom: 17px;
+  color: $color-white;
+}
+
+.story-text {
+  p{
+    line-height: 1.75;
+    margin-left: auto;
+    font-size: 12px;
+    color: $color-white;
+  }
+}
+
+.story-btn{
+  // width: 115.71px;
+
+  padding-top: 50px;
+  text-align: right;
+  .story-btn-red{
+    padding: 7px 15.85px 7.43px;
+  }
+}
+

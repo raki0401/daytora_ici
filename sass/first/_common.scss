@@ -2,7 +2,7 @@ body {
   font-family: $font-family-default;
   font-size: $font-size-base;
   color: $color-main;
-  background: url('../img/長方形\ 151@2x.png');
+  background: url('../img/長方形 151@2x.png')fixed;
 }
 
 .inner{
@@ -20,11 +20,12 @@ a{
   background-color: $color-btn-red;
   color: $color-white;
   font-size: 14px;
-  padding: 21px 43px 19px 45px;
+  // padding: 21px 43px 19px 45px;
   cursor: pointer;
 }
 
 .section-title{
   font-size: 43px;
   text-align: center;
+  line-height: 57px;
 }

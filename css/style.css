@@ -3,7 +3,7 @@ body {
   font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN w3", "Meiryo", "メイリオ", sans-serif;
   font-size: 16px;
   color: #301F1B;
-  background: url("../img/長方形 151@2x.png");
+  background: url("../img/長方形 151@2x.png") fixed;
 }
 
 .inner {
@@ -21,13 +21,13 @@ a {
   background-color: #C63205;
   color: #fff;
   font-size: 14px;
-  padding: 21px 43px 19px 45px;
   cursor: pointer;
 }
 
 .section-title {
   font-size: 43px;
   text-align: center;
+  line-height: 57px;
 }
 
 header {
@@ -182,6 +182,7 @@ header {
 .top-inner {
   max-width: 920px;
   margin: 0 auto;
+  position: relative;
 }
 
 @media screen and (max-width: 950px) {
@@ -237,10 +238,10 @@ header {
 
 .top-text-right {
   margin-left: 210px;
-  margin-top: 100px;
+  margin-top: 88px;
   color: #fff;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 22px;
 }
 
 @media screen and (max-width: 950px) {
@@ -257,8 +258,19 @@ header {
 }
 
 .top-btn {
-  padding-top: 30px;
+  position: absolute;
+  bottom: -30px;
+  right: 0;
+  margin-top: 30px;
   text-align: right;
+}
+
+.top-btn .top-btn-red {
+  text-align: center;
+  line-height: 60px;
+  width: 200px;
+  height: 60px;
+  display: inline-block;
 }
 
 .intro-inner {
@@ -267,13 +279,10 @@ header {
   background: url(../../img/左上画像装飾@2x.png) no-repeat top left/150px;
   width: 85%;
   margin: 60px auto 56px;
+  padding-top: 26px;
 }
 
 .introduction-title {
-  font-size: 43px;
-  line-height: 1.53;
-  padding-top: 26px;
-  text-align: center;
   font-family: "Futura-CondensedMedium", "Futura", sans-serif;
 }
 
@@ -362,4 +371,31 @@ header {
   top: 6px;
   right: 0;
   padding: 10px 21px 11px;
+}
+
+.story {
+  background: url(../../img/story-img@2x.jpg) no-repeat left center/cover;
+  padding-top: 26px;
+  padding-bottom: 50px;
+}
+
+.story-title {
+  margin-bottom: 17px;
+  color: #fff;
+}
+
+.story-text p {
+  line-height: 1.75;
+  margin-left: auto;
+  font-size: 12px;
+  color: #fff;
+}
+
+.story-btn {
+  padding-top: 50px;
+  text-align: right;
+}
+
+.story-btn .story-btn-red {
+  padding: 7px 15.85px 7.43px;
 }
