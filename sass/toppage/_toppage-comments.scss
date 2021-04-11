@@ -1,0 +1,51 @@
+.comments {
+  padding-top: 55px;
+  padding-bottom: 245px;
+}
+
+.comments-title {
+  padding-bottom: 26px;
+}
+
+.comments-text {
+  text-align: center;
+  font-size: 24px;
+  padding-bottom: 30px;
+}
+
+.comments-content {
+  width: 100%;
+  height: 214px;
+  background: url(../../img/185@2x.jpg) no-repeat center center / cover;
+  color: $color-white;
+}
+
+.comments-body {
+  padding: 44px 0 0 30px;
+  // width: 50%;
+  text-align: left;
+}
+
+.comments-human-title {
+  // font-size: px;
+  padding-bottom: 15px;
+  span {
+    font-size: 26px;
+  }
+}
+
+.comments-human-text {
+  font-size: 14px;
+  line-height: 1.57;
+  max-width: 420px;
+  width: 100%;
+}
+
+.comments-btn{
+  text-align: right;
+  margin-right: 14.29px;
+  margin-top: 6.9px;
+  .comments-btn-red{
+    padding: 8px 31px 9px;
+  }
+}

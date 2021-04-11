@@ -8,6 +8,14 @@ body {
 .inner{
   max-width: 810px;
   margin: 0 auto;
+  @include mq-900(){
+    max-width: 700px;
+    // margin-right: 50px;
+    // margin-left: 50px;
+  }
+  @include mq(sp){
+    width: 90%;
+  }
 }
 
 a{
@@ -20,7 +28,13 @@ a{
   background-color: $color-btn-red;
   color: $color-white;
   font-size: 14px;
-  // padding: 21px 43px 19px 45px;
+  cursor: pointer;
+}
+
+.btn-brown{
+  background-color: $color-btn-brown;
+  color: $color-white;
+  font-size: 14px;
   cursor: pointer;
 }
 
@@ -28,4 +42,10 @@ a{
   font-size: 43px;
   text-align: center;
   line-height: 57px;
+  @include mq-900(){
+    font-size: 32px;
+  }
+  @include mq(sp){
+    font-size: 28px;
+  }
 }

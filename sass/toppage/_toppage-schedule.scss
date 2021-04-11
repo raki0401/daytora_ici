@@ -1,0 +1,42 @@
+.schedule-inner{
+  margin: 60px auto 30px;
+  background-color: rgba(255,255,255,0.29);
+}
+
+.schedule-title{
+  padding-top: 26px;
+}
+
+.schedule-nav{
+  padding: 23px 83px 57px 87px;
+  .schedule-nav-item{
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 18px;
+    &:last-child{
+      padding-bottom: 0;
+    }
+  }
+}
+
+.schedule-nav-item-last{
+  border-bottom: solid 1px $color-main; 
+}
+
+.schedule-btns{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.schedule-brown-btn{
+  padding: 22px 42px;
+  font-size: 13px;
+}
+
+.schedule-red-btn{
+  padding: 22px 42px;
+  font-size: 13px;
+  margin-left: 60px;
+}

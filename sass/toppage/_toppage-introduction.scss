@@ -1,17 +1,23 @@
 .intro-inner{
   margin-top: 60px;
   background-color: rgba(255,255,255,0.29)!important;
-  background: url(../../img/左上画像装飾@2x.png) no-repeat top left / 150px;
-  width:85%;
+  background: url(../../img/左上画像装飾@2x.png) no-repeat top left / 230px;
+  // width: 85%;
   margin: 60px auto 56px;
   padding-top: 26px;
+  @include mq-900(){
+    background-size: 25%;
+  }
 }
 
 .introduction-title{
   // padding-top: 26px;
   font-family: $font-family-title;
+  @include mq-900(){
+    font-size: 32px;
+  }
   @include mq(sp){
-    font-size: 30px;
+    font-size: 28px;
   }
 }
 
@@ -19,8 +25,13 @@
   font-size: 34px;
   line-height: 46px;
   text-align: center;
+  font-weight: 600;
+  @include mq-900(){
+    font-size: 28px;
+  }
   @include mq(sp){
-    font-size: 25px;
+    font-size: 17px;
+    letter-spacing: -0.1em;
   }
 }
 
