@@ -1,3 +1,28 @@
+#page-top { 
+  position: fixed; 
+  right: 30px; 
+  bottom: 24px; 
+  //transition: all 1s; 
+  //display: none;       //重要
+   img{
+     width: 80px;
+   }
+  &:hover { 
+    opacity: 0.5; 
+    // transform: rotateY(480deg); 
+  } 
+  //&.is-show { 
+		//visibility: visible; 
+	//} 
+  @include mq("sp") { 
+    right: 30px; 
+    bottom: 20px; 
+    img{
+      width: 50px;
+    }
+  } 
+}
+
 footer{
   background-color: #1a1a1a;
   text-align: center;

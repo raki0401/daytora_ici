@@ -22,6 +22,11 @@ a{
   text-decoration: none;
   color: #000;
   cursor: pointer;
+  &:hover{
+    color:rgba(0,0,0,0.6);
+    text-decoration: none;
+
+  }
 }
 
 .btn-red{
@@ -49,3 +54,17 @@ a{
     font-size: 28px;
   }
 }
+
+@media screen and (max-width: 767px){
+  .pc-only{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px){
+  .sp-only{
+    display: none;
+  }
+}
+
+

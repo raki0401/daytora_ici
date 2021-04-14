@@ -48,3 +48,8 @@ $breakpoints: (
     @content;
   }
 }
+@mixin mq-350{
+  @media (max-width: 350px){
+    @content;
+  }
+}

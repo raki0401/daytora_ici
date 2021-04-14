@@ -19,10 +19,11 @@
 }
 
 .story-btn{
-  // width: 115.71px;
-
   padding-top: 50px;
   text-align: right;
+  @include mq(sp){
+    text-align: center;
+  }
   .story-btn-red{
     padding: 7px 15.85px 7.43px;
   }

@@ -15,15 +15,26 @@
 
 .comments-content {
   width: 100%;
-  height: 214px;
+  min-height: 214px;
   background: url(../../img/185@2x.jpg) no-repeat center center / cover;
   color: $color-white;
+  @include mq-900(){
+   height: 250px; 
+  }
+  @include mq-540(){
+    background-image: none;
+    height: 100%;
+  }
 }
 
 .comments-body {
   padding: 44px 0 0 30px;
-  // width: 50%;
   text-align: left;
+  @include mq-540(){
+    padding: 30px 30px 30px 30px ;
+    // height: 150px;
+    background-color: $color-main;
+  }
 }
 
 .comments-human-title {
@@ -45,7 +56,27 @@
   text-align: right;
   margin-right: 14.29px;
   margin-top: 6.9px;
+  @include mq-540(){
+    margin-top: 30px;
+    margin-right: 0;
+    text-align: center;
+  }
   .comments-btn-red{
     padding: 8px 31px 9px;
   }
 }
+
+.comments-sp-img{
+
+  img{
+    display: none;
+    @include mq-540(){
+      display: block;
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      object-position:70%;
+    }
+  }
+}
+

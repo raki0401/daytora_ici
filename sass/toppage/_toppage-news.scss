@@ -1,93 +1,121 @@
-.news{
+.news {
   margin-bottom: 62px;
 }
 
-.news-inner{
+.news-inner {
   position: relative;
 }
 
-.news-title{
+.news-title {
   margin-bottom: 27px;
 }
 
-.news-items{
+.news-items {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  @include mq(sp){
+  // justify-content: space-between;
+  @include mq(sp) {
     display: block;
+    margin-bottom: 60px;
   }
 }
 
+.news-img {
+  max-width: 100%;
+}
 
-
-.news-item{
+.news-item {
   display: block;
-  width: calc(33.3% - 30px * 2 /3);
-  @include mq(sp){
+  width: calc(33.3% - 30px * 2 / 3);
+  &:nth-child(n + 4) {
+    width: calc(50% - 30px / 2);
+  }
+  margin-right: 30px;
+  &:nth-child(3),
+  &:nth-child(5) {
+    margin-right: 0;
+  }
+  img {
+    max-width: 100%;
+    height: 100%;
+    @include mq(sp) {
+      width: 100%;
+    }
+  }
+
+  @include mq(sp) {
     width: 100%;
     margin-bottom: 30px;
-  }
-  img{
-    max-width: 100%;
-    height: auto;
-    @include mq(sp){
+    &:nth-child(n + 4) {
       width: 100%;
     }
   }
 }
 
-
-.news-item-flex{
-  display: flex;
-  // justify-content: space-between;
-  margin-top: 30px;
-  width: calc(50% - 30px / 2);
-  // height: 88px;
-}
-
-.news-item-wrap{
+.news-item img {
   width: 100%;
-  // width: 156px;
-  // height: 88px;
-  // width: 156px;
 }
 
-.flex-img{
+.news-item-flex {
+  display: flex;
+  margin-top: 30px;
+  @include mq(sp) {
+    display: block;
+    width: 100%;
+  }
+}
+
+// .news-item-wrap {
+//   width: 100%;
+// }
+
+.flex-img {
   // object-fit: cover;
-max-width: 100%;
-height: auto;
-  width: 156px !important;
-  // height: 100%;
-  height: 88px!important;
+  max-width: 100%;
+  height: auto;
 }
 
-.news-item-bottom{
+.news-item-bottom {
   margin-top: -4px;
   background-color: $color-white;
-  padding: 14px 15px 50px;
-  @include mq(sp){
+  padding: 14px 15px 49px;
+  @include mq(sp) {
     padding-top: 20px;
     padding-bottom: 14px;
+    // &:nth-child(n+4){
+    //   margin-top: -40px;
+    // }
   }
-  time{
+  time {
     font-size: 12px;
   }
-  h4{
+  h4 {
     font-weight: 600;
   }
 }
 
-.news-item-bottom-only2{
+.news-item-bottom-only2 {
   margin: 0;
-  padding-bottom: 17px;
-  height: 100%;
+  padding-bottom: 14px;
   width: 100%;
+  @include mq(sp) {
+    margin-top: -5px;
+    padding-bottom: 33px;
+  }
 }
 
-.news-btn-red{
+.news-btn {
+  @include mq(sp) {
+    text-align: center !important;
+  }
+}
+
+.news-btn-red {
   position: absolute;
   top: 6px;
   right: 0;
- padding: 10px 21px 11px;
+  padding: 10px 21px 11px;
+  @include mq(sp) {
+    position: static;
+  }
 }
