@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
-@import "./first/setting";
-@import "./first/mixin";
-@import "./first/common";
+@import "./common/setting";
+@import "./common/mixin";
+@import "./common/common";
 @import "./header/header";
 @import "./toppage/toppage-mainvisual";
 @import "./toppage/toppage-introduction";
@@ -11,7 +11,8 @@
 @import "./toppage/toppage-comments";
 @import "./toppage/toppage-cast";
 @import "./toppage/toppage-schedule";
-@import "./news-archive/news-archive-mainvisual";
+@import "./mainvisual/mainvisual";
+@import "./breadcrumb/breadcrumb";
 @import "./news-archive/news-archive-news";
 
 
