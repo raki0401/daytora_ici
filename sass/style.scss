@@ -3,7 +3,9 @@
 @import "./common/setting";
 @import "./common/mixin";
 @import "./common/common";
+
 @import "./header/header";
+
 @import "./toppage/toppage-mainvisual";
 @import "./toppage/toppage-introduction";
 @import "./toppage/toppage-news";
@@ -11,12 +13,15 @@
 @import "./toppage/toppage-comments";
 @import "./toppage/toppage-cast";
 @import "./toppage/toppage-schedule";
+
 @import "./mainvisual/mainvisual";
+
 @import "./breadcrumb/breadcrumb";
+
 @import "./news-archive/news-archive-news";
 
-
 @import "./news-single/news-single";
+
 @import "./storys/story";
 @import "./comments/comments";
 @import "./cast/cast";
