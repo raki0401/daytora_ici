@@ -1,12 +1,222 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta name="description" content="デイトラ卒業制作">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases\v5.6.3/css/all.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>卒業制作toppage</title>
 </head>
+
 <body>
-  
+  <header id="header">
+    <div class="nav-wrap">
+      <nav class="header-nav">
+        <ul>
+          <li><a href="index.html" class="header-nav-top little">TOP</a></li>
+          <li><a href="news_archive.html" class="header-nav-news">NEWS</a></li>
+          <li><a href="story.html" class="header-nav-story">STORY</a></li>
+          <li><a href="comments.html" class="header-nav-comments">COMMENTS</a></li>
+          <li><a href="cast.html" class="header-nav-cast little2">CAST</a></li>
+          <li><a href="inquiry.html" class="header-nav-inquiry">INQUIRY</a></li>
+        </ul>
+      </nav>
+      <!-- <div class="next-btn">＞</div> -->
+    </div><!-- /.nav-wrap -->
+    <div class="hamburger-btn"><span></span></div>
+  </header>
+
+  <!--開いた時の背景の暗い色の部分-->
+  <div class="hamburger-back"></div>
+
+  <!--開いた時のメニュー-->
+  <nav class="hamburger">
+    <ul class="hamburger__lists">
+      <li class="hamburger__list">
+        <a class="hamburger__link little" href="#top">TOP</a>
+      </li>
+      <li class="hamburger__list">
+        <a class="hamburger__link" href="#news">NEWS</a>
+      </li>
+      <li class="hamburger__list">
+        <a class="hamburger__link" href="#story">STORY</a>
+      </li>
+      <li class="hamburger__list">
+        <a class="hamburger__link" href="#comments">COMMENTS</a>
+      </li>
+      <li class="hamburger__list">
+        <a class="hamburger__link little2" href="#cast">CAST</a>
+      </li>
+      <li class="hamburger__list">
+        <a class="hamburger__link" href="#inquiry">INQUIRY</a>
+      </li>
+    </ul>
+  </nav>
+
+  <section id="mainvisual-common" class="mainvisual-common">
+    <div class="inner">
+      <div class="mainvisual-common-imgs">
+        <div class="mainvisual-text1">
+          <img class="mainvisual-text-left" src="../img/top_text@2x.png" alt="">
+        </div><!-- /.mainvisual-text1 -->
+        <div class="mainvisual-text2">
+          <img class="mainvisual-text-right" src="../img/top_text_left@2x.png" alt="">
+        </div><!-- /.mainvisual-text2 -->
+      </div><!-- /.news-archive-imgs -->
+      <div class="mainvisual-common-btn">
+        <a href="#" class="btn-red mainvisual-common-btn-red">チケット予約サイトへ</a><!-- /.btn-red -->
+      </div><!-- /.top-btn -->
+    </div><!-- /.inner news-archive-inner -->
+  </section>
+
+  <main>
+    <div class="inner">
+      <div class="breadcrumb">
+        <span property="itemListElement" typeof="ListItem">
+          <a property="item" typeof="WebPage" href="../html/index.html" class="home"><span
+              property="name">ホーム&nbsp;</span></a>
+          <meta property="position" content="1" />
+        </span>
+        <i class="fas fa-angle-right"></i>
+        <a property="item" typeof="WebPage" href="../html/news_archive.html" class="home"><span class="current-item"
+            property="name">&nbsp;news&nbsp;</span></a>
+        <i class="fas fa-angle-right"></i>
+        <span class="current-item">「完全版マハーバーラタ」2020年7月・東京公演！！</span>
+      </div>
+    </div>
+    <!--inner-->
+
+    <section class="inquiry">
+      <div class="inner confilm-inner">
+        <div class="section-title confilm-title">INQUIRY</div><!-- /.section-title confilm-title -->
+        <div class="confilm-inquiry">
+          <p class="confilm-text">お問い合わせありがとうございました。 <br>メッセージは正常に送信されました。</p><!-- /.confilm-text -->
+        </div><!-- / -->
+      </div><!-- /.inner -->
+    </section><!-- /.inquiry -->
+
+    <section id="news" class="news ">
+      <div class="inner news-inner">
+        <h2 class="section-title news-title confilm-news-title">LATEST NEWS</h2><!-- /.section-title -->
+        <div class="news-items ">
+          <a href="#" class="news-item ">
+            <div class="news-img">
+              <img src="../img/マスクグループ 1@2x.jpg" alt="">
+            </div><!-- /.news-img -->
+            <div class="news-item-bottom">
+              <time>2019.9.30</time>
+              <h4>「完全版マハーバーラタ」2020年7月・東京公演！！</h4>
+            </div><!-- /.news-item-bottom -->
+          </a><!-- /.news-item -->
+          <a href="#" class="news-item">
+            <div class="news-img">
+              <img src="../img/グループ 158@2x.jpg" alt="">
+            </div><!-- /.news-img -->
+            <div class="news-item-bottom">
+              <time>2019.9.30</time>
+              <h4>「完全版マハーバーラタ」2020年7月・東京公演！！</h4>
+            </div><!-- /.news-item-bottom -->
+          </a><!-- /.news-item -->
+          <a href="#" class="news-item">
+            <div class="news-img">
+              <img src="../img/マスクグループ 2@2x.jpg" alt="">
+            </div><!-- /.news-img -->
+            <div class="news-item-bottom">
+              <time>2019.9.30</time>
+              <h4>「完全版マハーバーラタ」2020年7月・東京公演！！</h4>
+            </div><!-- /.news-item-bottom -->
+          </a><!-- /.news-item -->
+          <a href="#" class="news-item news-item-flex">
+            <div class="news-item-wrap ">
+              <img class="flex-img" src="../img/グループ 164@2x.jpg" alt="">
+            </div><!-- /.news-item-wrap -->
+            <div class="news-item-bottom news-item-bottom-only2">
+              <time>2019.9.30</time>
+              <h4>ニュースのタイトルが入ります。</h4>
+            </div><!-- /.news-item-bottom -->
+          </a><!-- /.news-item -->
+          <a href="#" class="news-item news-item-flex">
+            <div class="news-item-wrap">
+              <img class="flex-img" src="../img/グループ 164@2x.jpg" alt="">
+            </div><!-- /.news-item-wrap -->
+            <div class="news-item-bottom news-item-bottom-only2">
+              <time>2019.9.30</time>
+              <h4>ニュースのタイトルが入ります。</h4>
+            </div><!-- /.news-item-bottom -->
+          </a><!-- /.news-item -->
+        </div><!-- /.news-items -->
+        <div class="news-btn">
+          <a href="./news_archive.html" class="btn-red news-btn-red">ニュース一覧へ</a>
+        </div><!-- /.news-btn -->
+      </div><!-- /.inner -->
+    </section><!-- /.news -->
+
+
+
+
+
+
+
+
+    <section class="schedule" id="inquiry">
+      <div class="inner schedule-inner">
+        <div class="schedule-top">
+          <h2 class="section-title schedule-title">SCHEDULE</h2><!-- /.section-title -->
+          <ul class="schedule-nav">
+            <li class="schedule-nav-item">
+              <p>2020.7.04</p>
+              <p>17:00開演</p>
+              <p>中野ZERO大ホール</p>
+              <a href="#" class="schedule-nav-item-link">チケット予約受付中</a>
+            </li><!-- /.schedule-nav-item -->
+            <li class="schedule-nav-item">
+              <p>2020.7.04</p>
+              <p>17:00開演</p>
+              <p>中野ZERO大ホール</p>
+              <a href="#" class="schedule-nav-item-link">チケット予約受付中</a>
+            </li><!-- /.schedule-nav-item -->
+            <li class="schedule-nav-item">
+              <p>2020.7.04</p>
+              <p>17:00開演</p>
+              <p>中野ZERO大ホール</p>
+              <a href="#" class="schedule-nav-item-link">チケット予約受付中</a>
+            </li><!-- /.schedule-nav-item -->
+            <li class="schedule-nav-item">
+              <p>2020.7.04</p>
+              <p>17:00開演</p>
+              <p>中野ZERO大ホール</p>
+              <a href="#" class="schedule-nav-item-link">チケット予約受付中</a>
+            </li><!-- /.schedule-nav-item -->
+          </ul><!-- /.schedule-nav -->
+        </div><!-- /.footer-top -->
+      </div><!-- /.inner -->
+      <div class="schedule-btns">
+        <a href="#" class="btn-brown schedule-brown-btn">お問い合わせはこちら</a><!-- /.btn-brown -->
+        <a href="#" class="btn-red schedule-red-btn">チケット予約サイトへ</a><!-- /.btn-red -->
+      </div><!-- /.schedule-btns -->
+    </section><!-- /.schedule -->
+
+  </main>
+  <div id="page-top"><a href="#"><img src="../img/totop.png" alt=""></a></div>
+
+  <footer>
+    <p>Copyright © 2019 完全版マハーバーラタ All Rights Reserved.</p>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    crossorigin="anonymous"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script> -->
+  <script src="../js/script.js"></script>
 </body>
+
 </html>

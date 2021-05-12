@@ -11,21 +11,40 @@
   text-align: center;
   font-size: 24px;
   padding-bottom: 30px;
+  @include mq-900(){
+    font-size: 22px;
+  }
+  @include mq(sp){
+    font-size: 16px;
+  }
 }
 
 .comments-content {
-  width: 100%;
-  min-height: 214px;
-  background: url(../../img/185@2x.jpg) no-repeat center center / cover;
+  // width: 100%;
+  // min-height: 214px;
+  padding-top: 44px;
+  padding-left: 32px;
+  padding-right: 32px;
+  background: url(../img/comment01.jpg) no-repeat center center / cover;
   color: $color-white;
-  @include mq-900(){
-   height: 250px; 
+  background-color: #000;
+  @include mq(sp){
+    background-position: top;
+    padding-top: 45%;
+    background-size: 100%;
   }
-  @include mq-540(){
-    background-image: none;
-    height: 100%;
-  }
+  
+    
+  
+  // @include mq-900(){
+  //  height: 250px; 
+  // }
+  // @include mq-540(){
+  //   background-image: none;
+  //   height: 100%;
+  // }
 }
+
 
 .comments-body {
   padding: 44px 0 0 30px;
@@ -40,8 +59,14 @@
 .comments-human-title {
   // font-size: px;
   padding-bottom: 15px;
+  @include mq-540(){
+    font-size: 12px;
+  }
   span {
     font-size: 26px;
+    @include mq-540(){
+      font-size: 20px;
+    }
   }
 }
 
@@ -50,12 +75,16 @@
   line-height: 1.57;
   max-width: 420px;
   width: 100%;
+  @include mq-540(){
+    font-size: 12px;
+  }
 }
 
 .comments-btn{
   text-align: right;
   margin-right: 14.29px;
-  margin-top: 6.9px;
+  margin-top: 16.9px;
+  height: 41px;
   @include mq-540(){
     margin-top: 30px;
     margin-right: 0;
@@ -73,9 +102,11 @@
     @include mq-540(){
       display: block;
       width: 100%;
-      height: 200px;
-      object-fit: cover;
-      object-position:70%;
+      height: 100%;
+      // padding-top: 50%;
+      // height: 200px;
+      // object-fit: cover;
+      // object-position:70%;
     }
   }
 }

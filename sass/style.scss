@@ -6,6 +6,8 @@
 
 @import "./header/header";
 
+@import "./mainvisual/mainvisual";
+
 @import "./toppage/toppage-mainvisual";
 @import "./toppage/toppage-introduction";
 @import "./toppage/toppage-news";
@@ -14,8 +16,6 @@
 @import "./toppage/toppage-cast";
 @import "./toppage/toppage-schedule";
 
-@import "./mainvisual/mainvisual";
-
 @import "./breadcrumb/breadcrumb";
 
 @import "./news-archive/news-archive-news";
@@ -23,7 +23,15 @@
 @import "./news-single/news-single";
 
 @import "./storys/story";
-@import "./comments/comments";
-@import "./cast/cast";
-@import "./contact/inguiry";
+
+@import "./comments/page-comments";
+@import "./comments/comments-contents";
+@import "./cast/page-cast-top";
+@import "./cast/page-cast-center";
+@import "./cast/page-cast-bottom";
+
+@import "./inquiry/inquiry";
+
+@import "./confilm/confilm";
+
 @import "./footer/footer";

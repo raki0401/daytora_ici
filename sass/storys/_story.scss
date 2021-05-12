@@ -1,0 +1,78 @@
+.story-top--wrap{
+  display: flex;
+  // width: 50px;
+}
+
+.story-top-img{
+  padding-bottom: 35.6px;
+}
+
+.story-mainvisual{
+  background: url('../../img/ブロック1背景\(ヘッダーからシームレス\)@2x.jpg')no-repeat center center / cover;
+  margin-bottom: 0;
+  
+}
+
+.story-page-btn-wrap{
+  // width: 150px;
+  // height: 40px;
+  text-align: right;
+  
+  @include mq(sp){
+    text-align: center;
+  }
+}
+.story-page-btn{
+  display: inline-block;
+  color: $color-white;
+  background-color: $color-btn-red;
+  font-size: 12px;
+  padding: 14px 15px;
+}
+
+.story-breadcrumb{
+  color: $color-white;
+  margin-top: 14.4px;
+}
+
+.contents-a{
+  background: url('../../img/グループ\ 84@2x.png')no-repeat top center / cover;
+  background-color: #000;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.contents-b{
+  background: url('../../img/グループ\ 86@2x.jpg')no-repeat top center / cover;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.contents-c{
+  background: url('../../img/グループ\ 88@2x.jpg')no-repeat top center / cover;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.story-home{
+  color: $color-white;
+}
+
+.story-body-wrap{
+  padding-bottom: 60px;
+  padding-top: 60px;
+  max-width: 390px;
+  margin-left: auto;
+}
+
+.wrap-left{
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.story-body-text{
+  // display: flex;
+  // align-items: center;
+  font-size: 12px;
+  line-height: 1.5;
+  color: $color-white;
+  letter-spacing: 0.05em;
+}

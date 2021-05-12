@@ -1,0 +1,45 @@
+.page-cast-center-items{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 25.5px;
+  @include mq(sp){
+// display: block;
+    // margin: 0 auto;
+    // justify-content: center;
+  }
+}
+
+.page-cast-item{
+  display: flex;
+  margin-right: 30px;
+  margin-top: 60.8px;
+  &:nth-child(even){
+    margin-right: 0;
+    @include mq(sp){
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+  @include mq(sp){
+    display: block;
+    margin: 60.95px auto 0;
+    text-align: center;
+  }
+}
+
+.page-cast-img{
+  width: 129px;
+  height: 129px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.page-cast-item-body{
+  max-width: 250px;
+  line-height: 1.5;
+}
+
+.human4{
+  font-size: 22px;
+}
