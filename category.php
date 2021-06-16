@@ -26,7 +26,7 @@
   <!--開いた時の背景の暗い色の部分-->
   <div class="hamburger-back"></div>
 
-  <!--開いた時のメニュー-->
+  <!--開いた時のメニュー0-->
   <nav class="hamburger">
     <ul class="hamburger__lists">
       <li class="hamburger__list">
