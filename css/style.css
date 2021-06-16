@@ -8,7 +8,7 @@ body {
   font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN w3", "Meiryo", "メイリオ", sans-serif;
   font-size: 16px;
   color: #301F1B;
-  background: url("../img/長方形 151@2x.png") fixed;
+  background: url("../img/151@2x.png") fixed;
 }
 
 .inner {
@@ -319,7 +319,7 @@ header {
   z-index: 40;
   position: fixed;
   width: 50%;
-  background: url("../../img/長方形 151@2x.png");
+  background: url("../img/151@2x.png");
   right: 0;
   height: 100%;
   font-size: 20px;
@@ -362,13 +362,13 @@ header {
 }
 
 .mainvisual-common {
-  background: url("../../img/119@2x.jpg") no-repeat top center/cover;
+  background: url("../img/119@2x.jpg") no-repeat top center/cover;
   margin-bottom: 34.48px;
 }
 
 @media (max-width: 767px) {
   .mainvisual-common {
-    background: url("../../img/211@2x.jpg") no-repeat center center/cover;
+    background: url("../img/211@2x.jpg") no-repeat center center/cover;
   }
 }
 
@@ -444,7 +444,7 @@ header {
 }
 
 .top {
-  background: url(../../img/211@2x.jpg) no-repeat center center/cover;
+  background: url("../img/211@2x.jpg") no-repeat center center/cover;
 }
 
 .top-inner {
@@ -586,7 +586,7 @@ header {
 .intro-inner {
   margin-top: 60px;
   background-color: rgba(255, 255, 255, 0.29) !important;
-  background: url(../../img/左上画像装飾@2x.png) no-repeat top left/230px;
+  background: url("../img/sankaku@2x.png") no-repeat top left/230px;
   margin: 60px auto 56px;
   padding-top: 26px;
 }
@@ -672,12 +672,22 @@ header {
 
 .news-item {
   display: block;
+  margin-bottom: 30px;
   width: calc(33.3% - 30px * 2 / 3);
   margin-right: 30px;
 }
 
 .news-item:nth-child(n + 4) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: calc(50% - 30px / 2);
+}
+
+@media (max-width: 767px) {
+  .news-item:nth-child(n + 4) {
+    display: block;
+  }
 }
 
 .news-item:nth-child(3), .news-item:nth-child(5) {
@@ -731,13 +741,13 @@ header {
 .news-item-bottom {
   margin-top: -4px;
   background-color: #fff;
-  padding: 14px 15px 49px;
+  padding: 14px 15px 24px;
 }
 
 @media (max-width: 767px) {
   .news-item-bottom {
     padding-top: 20px;
-    padding-bottom: 14px;
+    padding-bottom: 25px;
   }
 }
 
@@ -782,7 +792,7 @@ header {
 }
 
 .story {
-  background: url(../../img/story-img@2x.jpg) no-repeat left center/cover;
+  background: url("../img/story-img@2x.jpg") no-repeat left center/cover;
   padding-top: 26px;
   padding-bottom: 50px;
 }
@@ -845,7 +855,7 @@ header {
   padding-top: 44px;
   padding-left: 32px;
   padding-right: 32px;
-  background: url(../img/comment01.jpg) no-repeat center center/cover;
+  background: url("../img/comment01.jpg") no-repeat center center/cover;
   color: #fff;
   background-color: #000;
 }
@@ -1486,7 +1496,7 @@ header {
 }
 
 .story-mainvisual {
-  background: url("../../img/ブロック1背景(ヘッダーからシームレス)@2x.jpg") no-repeat center center/cover;
+  background: url("../img/147@2x.jpg") no-repeat center center/cover;
   margin-bottom: 0;
 }
 
@@ -1513,21 +1523,26 @@ header {
   margin-top: 14.4px;
 }
 
+.story-contents:nth-child(even) .wrap-left {
+  margin-right: 0;
+  margin-left: auto;
+}
+
 .contents-a {
-  background: url("../../img/グループ 84@2x.png") no-repeat top center/cover;
+  background: url("../img/84@2x.png") no-repeat top center/cover;
   background-color: #000;
   font-size: 14px;
   line-height: 1.5;
 }
 
 .contents-b {
-  background: url("../../img/グループ 86@2x.jpg") no-repeat top center/cover;
+  background: url("../img/86@2x.jpg") no-repeat top center/cover;
   font-size: 14px;
   line-height: 1.5;
 }
 
 .contents-c {
-  background: url("../../img/グループ 88@2x.jpg") no-repeat top center/cover;
+  background: url("../img/88@2x.jpg") no-repeat top center/cover;
   font-size: 14px;
   line-height: 1.5;
 }
@@ -1999,7 +2014,8 @@ header {
 }
 
 #page-top img {
-  width: 80px;
+  width: 60px;
+  border-radius: 50%;
 }
 
 #page-top:hover {

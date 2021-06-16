@@ -22,13 +22,21 @@
 
 .news-img {
   max-width: 100%;
+
 }
 
 .news-item {
   display: block;
+  margin-bottom: 30px;
+
   width: calc(33.3% - 30px * 2 / 3);
   &:nth-child(n + 4) {
+    display: flex;
     width: calc(50% - 30px / 2);
+    // margin-bottom: 0;
+    @include mq(sp){
+      display: block;
+    }
   }
   margin-right: 30px;
   &:nth-child(3),
@@ -78,10 +86,10 @@
 .news-item-bottom {
   margin-top: -4px;
   background-color: $color-white;
-  padding: 14px 15px 49px;
+  padding: 14px 15px 24px;
   @include mq(sp) {
     padding-top: 20px;
-    padding-bottom: 14px;
+    padding-bottom: 25px;
     // &:nth-child(n+4){
     //   margin-top: -40px;
     // }

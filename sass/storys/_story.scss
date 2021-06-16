@@ -8,10 +8,12 @@
 }
 
 .story-mainvisual{
-  background: url('../../img/ブロック1背景\(ヘッダーからシームレス\)@2x.jpg')no-repeat center center / cover;
+  background: url('../img/147@2x.jpg')no-repeat center center / cover;
   margin-bottom: 0;
   
 }
+
+
 
 .story-page-btn-wrap{
   // width: 150px;
@@ -35,19 +37,30 @@
   margin-top: 14.4px;
 }
 
+.story-contents{
+  &:nth-child(even) .wrap-left{
+    margin-right: 0;
+    margin-left: auto;
+  }
+}
+  
+  
+
+
 .contents-a{
-  background: url('../../img/グループ\ 84@2x.png')no-repeat top center / cover;
+  background: url('../img/84@2x.png')no-repeat top center / cover;
   background-color: #000;
   font-size: 14px;
   line-height: 1.5;
+  
 }
 .contents-b{
-  background: url('../../img/グループ\ 86@2x.jpg')no-repeat top center / cover;
+  background: url('../img/86@2x.jpg')no-repeat top center / cover;
   font-size: 14px;
   line-height: 1.5;
 }
 .contents-c{
-  background: url('../../img/グループ\ 88@2x.jpg')no-repeat top center / cover;
+  background: url('../img/88@2x.jpg')no-repeat top center / cover;
   font-size: 14px;
   line-height: 1.5;
 }
@@ -66,7 +79,11 @@
 .wrap-left{
   margin-left: 0;
   margin-right: auto;
+ 
 }
+// .wrap-left:nth-child(2n){
+//   margin-right: 0;
+// }
 
 .story-body-text{
   // display: flex;
