@@ -1,30 +1,15 @@
-header{
+header {
   height: 90px;
-  // overflow:scroll;
 }
 
-// .nav-wrap{
-//   position: relative;
-// }
-
-// .header-nav{
-//   width: 100%;
-//   overflow-x: auto;
-//   -webkit-overflow-scrolling: touch; /* 慣性スクロール */
-// }
-.nav-wrap{
+.nav-wrap {
   width: 100%;
-  // overflow: hidden;
-  // position: relative;
 }
 
-.header-nav{
-  @include mq(sp){
+.header-nav {
+  @include mq(sp) {
     display: none;
   }
-  // width: 100%;
-//   overflow-x: auto;
-//   -webkit-overflow-scrolling: touch;
 }
 
 .header-nav ul {
@@ -36,7 +21,7 @@ header{
   width: 600px;
   // min-width: 600px;
   margin: 0 auto;
-  
+
   li {
     font-size: 22px;
     line-height: 20px;
@@ -44,89 +29,125 @@ header{
     &:last-child {
       margin: 0;
     }
-    @include mq-1000(){
+    @include mq-1000() {
       font-size: 18px;
       font-weight: bold;
     }
-   
   }
 }
 
-.header-nav-top {
+// .header-nav-top
+.header-nav ul li a {
   color: $color-header-text;
   text-align: center;
-  &::before {
-    content: "トップ";
-    display: block;
-    font-size: 12px;
+  // &::before {
+  //   content: "トップ";
+  //   display: block;
+  //   font-size: 12px;
 
-    @include mq-1000(){
-      font-size: 10px;
-    }
-  }
+  //   @include mq-1000(){
+  //     font-size: 10px;
+  //   }
+  // }
 }
-.header-nav-news {
-  color: $color-header-text;
-  text-align: center;
-  &::before {
-    content: "ニュース";
-    display: block;
-    font-size: 12px;
-    @include mq-1000(){
-      font-size: 10px;
-    }
-  }
-}
-.header-nav-story {
-  color: $color-header-text;
-  text-align: center;
-  &::before {
-    content: "ストーリー";
-    display: block;
-    font-size: 12px;
-    @include mq-1000(){
-      font-size: 10px;
-    }
-  }
-}
-.header-nav-comments {
-  color: $color-header-text;
-  text-align: center;
-  &::before {
-    content: "著名人コメント";
-    display: block;
-    font-size: 12px;
-    @include mq-1000(){
-      font-size: 10px;
-    }
-  }
-}
-.header-nav-cast {
-  color: $color-header-text;
-  text-align: center;
-  &::before {
-    content: "キャスト";
-    display: block;
-    font-size: 12px;
-    @include mq-1000(){
-      font-size: 10px;
-    }
-  }
-}
-.header-nav-inquiry {
-  color: $color-header-text;
-  text-align: center;
-  &::before {
-    content: "問い合わせ";
-    display: block;
-    font-size: 12px;
-  @include mq-1000(){
-    font-size: 10px;
-  }    
+
+.header-nav ul li a::before {
+  @include mq-1000() {
+    font-size: 100px;
   }
 }
 
+.header-nav ul li:nth-child(1) a::before {
+  content: "トップ";
+  display: block;
+  font-size: 12px;
+}
+.header-nav ul li:nth-child(2) a::before {
+  content: "ニュース";
+  display: block;
+  font-size: 12px;
+}
+.header-nav ul li:nth-child(3) a::before {
+  content: "ストーリー";
+  display: block;
+  font-size: 12px;
+}
+.header-nav ul li:nth-child(4) a::before {
+  content: "著名人コメント";
+  display: block;
+  font-size: 12px;
+}
+.header-nav ul li:nth-child(5) a::before {
+  content: "キャスト";
+  display: block;
+  font-size: 12px;
+}
+.header-nav ul li:nth-child(6) a::before {
+  content: "問い合わせ";
+  display: block;
+  font-size: 12px;
+}
 
+// .header-nav-news {
+//   color: $color-header-text;
+//   text-align: center;
+//   &::before {
+//     content: "ニュース";
+//     display: block;
+//     font-size: 12px;
+//     @include mq-1000(){
+//       font-size: 10px;
+//     }
+//   }
+// }
+// .header-nav-story {
+//   color: $color-header-text;
+//   text-align: center;
+//   &::before {
+//     content: "ストーリー";
+//     display: block;
+//     font-size: 12px;
+//     @include mq-1000(){
+//       font-size: 10px;
+//     }
+//   }
+// }
+// .header-nav-comments {
+//   color: $color-header-text;
+//   text-align: center;
+//   &::before {
+//     content: "著名人コメント";
+//     display: block;
+//     font-size: 12px;
+//     @include mq-1000(){
+//       font-size: 10px;
+//     }
+//   }
+// }
+// .header-nav-cast {
+//   color: $color-header-text;
+//   text-align: center;
+//   &::before {
+//     content: "キャスト";
+//     display: block;
+//     font-size: 12px;
+//     @include mq-1000(){
+//       font-size: 10px;
+//     }
+//   }
+// }
+// .header-nav-inquiry {
+//   color: $color-header-text;
+//   text-align: center;
+//   &::before {
+//     content: "問い合わせ";
+//     display: block;
+//     font-size: 12px;
+//   @include mq-1000(){
+//     font-size: 10px;
+//   }
+//   }
+// }
 
 .hamburger-btn {
   width: 50px;
@@ -139,9 +160,9 @@ header{
   cursor: pointer;
   display: none;
   z-index: 100;
-  
-  @include mq(sp){ 
-    display: block; 
+
+  @include mq(sp) {
+    display: block;
   }
 
   span {
@@ -194,12 +215,11 @@ header{
         width: 100%;
         background-color: #fff;
       }
-      &::before{
+      &::before {
         transform: rotate(45deg);
         transition: all 0.5s ease 0s;
-        
       }
-      &::after{
+      &::after {
         transform: rotate(-45deg);
         transition: all 0.5s ease 0s;
       }
@@ -237,11 +257,22 @@ header{
 }
 .hamburger__lists {
   text-align: center;
-  margin-top: 100px;
+  margin-top: 60px;
 }
 .hamburger__list {
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+// .hamburger__list a{
+//   padding-top: 100px;
+//   display: inline-block;
+//   color: red;
+// }
+
+.hamburger__list a{
+    margin-top: 50px;
+    display: inline-block;
 }
 
 // .next-btn { /* 右側に固定する部分 */
@@ -254,6 +285,3 @@ header{
 //   background: #fff;
 //   color: #555;
 // }
-
-
-

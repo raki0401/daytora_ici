@@ -1,54 +1,4 @@
-<!DOCTYPE html>
-<html lang="ja">
-
-<head>
-  <?php get_header(); ?>
-</head>
-
-<body>
-  <header id="header">
-    <div class="nav-wrap">
-      <nav class="header-nav">
-        <ul>
-          <li><a href="<?php echo get_template_directory_uri(); ?>" class="header-nav-top little">TOP</a></li>
-          <li><a href="#news" class="header-nav-news">NEWS</a></li>
-          <li><a href="story.html" class="header-nav-story">STORY</a></li>
-          <li><a href="comments.html" class="header-nav-comments">COMMENTS</a></li>
-          <li><a href="cast.html" class="header-nav-cast little2">CAST</a></li>
-          <li><a href="inquiry.html" class="header-nav-inquiry">INQUIRY</a></li>
-        </ul>
-      </nav>
-      <!-- <div class="next-btn">＞</div> -->
-    </div><!-- /.nav-wrap -->
-    <div class="hamburger-btn"><span></span></div>
-  </header>
-
-  <!--開いた時の背景の暗い色の部分-->
-  <div class="hamburger-back"></div>
-
-  <!--開いた時のメニュー0-->
-  <nav class="hamburger">
-    <ul class="hamburger__lists">
-      <li class="hamburger__list">
-        <a class="hamburger__link little" href="#top">TOP</a>
-      </li>
-      <li class="hamburger__list">
-        <a class="hamburger__link" href="#news">NEWS</a>
-      </li>
-      <li class="hamburger__list">
-        <a class="hamburger__link" href="#story">STORY</a>
-      </li>
-      <li class="hamburger__list">
-        <a class="hamburger__link" href="#comments">COMMENTS</a>
-      </li>
-      <li class="hamburger__list">
-        <a class="hamburger__link little2" href="#cast">CAST</a>
-      </li>
-      <li class="hamburger__list">
-        <a class="hamburger__link" href="#inquiry">INQUIRY</a>
-      </li>
-    </ul>
-  </nav>
+<?php get_header(); ?>
 
   <section id="mainvisual-common" class="mainvisual-common">
     <div class="inner">
@@ -68,12 +18,7 @@
 
   <div class="inner">
     <div class="breadcrumb">
-      <span property="itemListElement" typeof="ListItem">
-        <a property="item" typeof="WebPage" href="../html/index.html" class="home"><span property="name">ホーム&nbsp;</span></a>
-        <meta property="position" content="1" />
-      </span>
-      <i class="fas fa-angle-right"></i>
-      <span class="current-item">&nbsp;news&nbsp;</span>
+    <?php bcn_display(); ?>
     </div>
   </div><!-- /.inner -->
 
@@ -106,13 +51,26 @@
     </div>
   </section>
 
+  <?php if(paginate_links()) :?>
   <div class="news-pagination">
-    <span class="news-pagination-1">1</span><!-- /.news-pagination-1 -->
-    <span class="news-pagination-2">2</span><!-- /.news-pagination-1 -->
-    <span class="news-pagination-next">&gt;</span><!-- /.news-pagination-1 -->
+  <?php
+echo
+paginate_links(
+array(
+'end_size' => 1,
+'mid_size' => 1,
+'prev_next' => true,
+'prev_text' => '<i class="fas fa-angle-left"></i>',
+'next_text' => '<i class="fas fa-angle-right"></i>',
+)
+);
+?>
+    <!-- <span class="news-pagination-1">1</span>
+    <span class="news-pagination-2">2</span>
+    <span class="news-pagination-next">&gt;</span> -->
 
   </div><!-- /.pagination -->
-
+<?php endif; ?>
   <section class="schedule" id="inquiry">
     <div class="inner schedule-inner">
       <div class="schedule-top">

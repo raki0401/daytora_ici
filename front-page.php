@@ -1,66 +1,4 @@
-<!DOCTYPE html>
-<html lang="ja">
-
-<head>
-  <?php get_header();  ?>
-</head>
-
-<body>
-  <header id="header">
-    <div class="nav-wrap">
-      <nav class="header-nav">
-        <ul>
-          <li><a href="#top" class="header-nav-top little">TOP</a></li>
-          <li><a href="news.html" class="header-nav-news">NEWS</a></li>
-          <li><a href="story.html" class="header-nav-story">STORY</a></li>
-          <li><a href="comments.html" class="header-nav-comments">COMMENTS</a></li>
-          <li><a href="cast.html" class="header-nav-cast little2">CAST</a></li>
-          <li><a href="inquiry.html" class="header-nav-inquiry">INQUIRY</a></li>
-        </ul>
-      </nav>
-      <!-- <div class="next-btn">＞</div> -->
-    </div><!-- /.nav-wrap -->
-    <div class="hamburger-btn"><span></span></div>
-  </header>
-
-  <!--開いた時の背景の暗い色の部分-->
-  <div class="hamburger-back"></div>
-
-  <!--開いた時のメニュー-->
-  <nav class="hamburger">
-    <ul class="hamburger__lists">
-      <?php
-      //.drawer-navを置き換えて、スマホ用メニューを動的に表示する
-      wp_nav_menu(
-        array(
-          'depth' => 1,
-          'theme_location' => 'drawer', //ドロワーメニューをここに表示すると指定
-          'container' => 'ul',
-          'container_class' => 'hamburger__lists',
-          'menu_class' => 'hamburger__list',
-        )
-      );
-      ?>
-      <!-- <li class="hamburger__list">
-        <a class="hamburger__link little" href="#top">TOP</a>
-      </li>
-      <li class="hamburger__list">
-        <a class="hamburger__link" href="#news">NEWS</a>
-      </li>
-      <li class="hamburger__list">
-        <a class="hamburger__link" href="#story">STORY</a>
-      </li>
-      <li class="hamburger__list">
-        <a class="hamburger__link" href="#comments">COMMENTS</a>
-      </li>
-      <li class="hamburger__list">
-        <a class="hamburger__link little2" href="#cast">CAST</a>
-      </li>
-      <li class="hamburger__list">
-        <a class="hamburger__link" href="#inquiry">INQUIRY</a>
-      </li> -->
-    </ul>
-  </nav>
+<?php get_header(); ?>
 
 
   <section id="top" class="top ">
@@ -129,7 +67,7 @@
 
       </div><!-- /.news-items -->
       <div class="news-btn">
-        <a href="<?php echo get_template_directory_uri(); ?>/archive.php" class="btn-red news-btn-red">ニュース一覧へ</a>
+        <a href="<?php  get_template_directory_uri(); ?>/category" class="btn-red news-btn-red">ニュース一覧へ</a>
       </div><!-- /.news-btn -->
     </div><!-- /.inner -->
   </section><!-- /.news -->
@@ -146,7 +84,7 @@
         </p>
       </div><!-- /.story-text -->
       <div class="story-btn">
-        <a href="#" class="btn-red story-btn-red">もっと詳しく</a><!-- /.btn-red -->
+        <a href="<?php get_template_directory_uri(); ?>/story" class="btn-red story-btn-red">もっと詳しく</a><!-- /.btn-red -->
       </div><!-- /.story-btn -->
     </div><!-- /.inner -->
   </section><!-- /.story -->
@@ -163,7 +101,7 @@
           まずこの聖句が浮かんだ。境界線に立つ人類。超越する意志。小池博史氏の心象が生み出したアバターが乱舞しながら深層意識に波紋を起こしてゆく。
         </div><!-- /.comments-text -->
         <div class="comments-btn">
-          <a href="#" class="btn-red comments-btn-red">もっと見る</a><!-- /.btn-red -->
+          <a href="<?php get_template_directory_uri(); ?>/comments" class="btn-red comments-btn-red">もっと見る</a><!-- /.btn-red -->
         </div><!-- /.comments-btn -->
       </div><!-- /.comments-content -->
     </div><!-- /.inner -->
