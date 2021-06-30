@@ -17,28 +17,17 @@
 <body <?php body_class( ); ?>>
   <header id="header">
     <div class="nav-wrap">
-      <?php
-      wp_nav_menu(
-        //.header-listを置き換えて、PC用メニューを動的に表示する
-        array(
-          'depth' => 1,
-          'theme_location' => 'global', //グローバルメニューをここに表示すると指定
-          'container' => 'nav',
-          'container_class' => 'header-nav',
-          'menu_class' => 'header-list',
-        )
-      );
-      ?>
-      <!-- <nav class="header-nav">
+     
+      <nav class="header-nav">
         <ul class="header-list">
-          <li><a href="#top" class="header-nav-top little">TOP</a></li>
-          <li><a href="news.html" class="header-nav-news">NEWS</a></li>
-          <li><a href="story.html" class="header-nav-story">STORY</a></li>
-          <li><a href="comments.html" class="header-nav-comments">COMMENTS</a></li>
-          <li><a href="cast.html" class="header-nav-cast little2">CAST</a></li>
-          <li><a href="inquiry.html" class="header-nav-inquiry">INQUIRY</a></li>
+          <li><a href="" class="header-nav-top little">TOP</a></li>
+          <li><a href="<?php echo esc_url(news_url()); ?>/" class="header-nav-news">NEWS</a></li>
+          <li><a href="<?php echo esc_url(story_url()); ?>/" class="header-nav-story">STORY</a></li>
+          <li><a href="<?php echo esc_url(comments_url()); ?>/">COMMENTS</a></li>
+          <li><a href="<?php echo esc_url(cast_url()); ?>/">CAST</a></li>
+          <li><a href="<?php echo esc_url(inquiry_url()); ?>/">INQUIRY</a></li>
         </ul>
-      </nav> -->
+      </nav>
       <!-- <div class="next-btn">＞</div> -->
     </div><!-- /.nav-wrap -->
     <div class="hamburger-btn"><span></span></div>
