@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html><!--おはよう-->
 <html lang="ja">
 
 <head>
