@@ -29,7 +29,7 @@
         )
       );
       ?>
-      <!-- <nav class="header-nav">--
+      <!-- <nav class="header-nav">-----
         <ul class="header-list">
           <li><a href="#top" class="header-nav-top little">TOP</a></li>
           <li><a href="news.html" class="header-nav-news">NEWS</a></li>
