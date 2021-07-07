@@ -11,7 +11,7 @@
         </div><!-- /.mainvisual-text2 -->
       </div><!-- /.news-archive-imgs -->
       <div class="mainvisual-common-btn">
-        <a href="#" class="btn-red mainvisual-common-btn-red">チケット予約サイトへ</a><!-- /.btn-red -->
+        <a href="<?php $page_id = get_page_by_path('inquiry'); echo esc_url(get_permalink($page_id)); ?>" class="btn-red mainvisual-common-btn-red">チケット予約サイトへ</a><!-- /.btn-red -->
       </div><!-- /.top-btn -->
     </div><!-- /.inner news-archive-inner -->
   </section>

@@ -15,7 +15,7 @@
         </div><!-- /.top-text-right -->
       </div><!-- /.top-text-wrap -->
       <div class="top-btn">
-        <a href="#" class="btn-red top-btn-red">チケット予約サイトへ</a><!-- /.btn-red -->
+        <a href="<?php $page_id = get_page_by_path('inquiry'); echo esc_url(get_permalink($page_id)); ?>" class="btn-red top-btn-red">チケット予約サイトへ</a><!-- /.btn-red -->
       </div><!-- /.top-btn -->
     </div><!-- /.top-inner -->
   </section><!-- /.top -->
@@ -67,7 +67,8 @@
 
       </div><!-- /.news-items -->
       <div class="news-btn">
-        <a href="<?php  get_template_directory_uri(); ?>/category" class="btn-red news-btn-red">ニュース一覧へ</a>
+      
+        <a href="<?php $category_id = get_cat_ID( 'news' ); echo esc_url(get_category_link($category_id)); ?>" class="btn-red news-btn-red">ニュース一覧へ</a>
       </div><!-- /.news-btn -->
     </div><!-- /.inner -->
   </section><!-- /.news -->

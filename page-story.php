@@ -13,7 +13,7 @@
         </div><!-- /.mainvisual-text2 -->
       </div><!-- /.news-archive-imgs -->
       <div class=" story-page-btn-wrap">
-        <a href="#" class="story-page-btn">チケット予約サイトへ</a><!-- /.btn-red -->
+        <a href="<?php $page_id = get_page_by_path('inquiry'); echo esc_url(get_permalink($page_id)); ?>" class="story-page-btn">チケット予約サイトへ</a><!-- /.btn-red -->
       </div><!-- /.top-btn -->
 
 
