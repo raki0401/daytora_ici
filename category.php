@@ -40,7 +40,7 @@
               <div class="archive-news-item-bottom">
                 <!-- <time datetime="2019-09-30">2019.9.30</time> -->
                 <?php the_time('Y.m.j');  ?>
-                <h4><?php the_content(); ?></h4>
+                <h4><?php the_title(); ?></h4>
               </div><!-- /.archive-news-item-bottom -->
             </a><!-- /.archive-archive-news-item -->
 
