@@ -1353,7 +1353,7 @@ header {
   }
 }
 
-.news-inner {
+.pagination-inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1363,7 +1363,7 @@ header {
 }
 
 @media (max-width: 767px) {
-  .news-inner {
+  .pagination-inner {
     display: block;
     margin: 0 auto;
   }

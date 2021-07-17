@@ -50,7 +50,7 @@
   </section>
 
   <div class="news-single-pagination">
-    <div class="inner news-inner">
+    <div class="inner pagination-inner">
 
       <div class="pagination-left">
         <time datetime="2019-9-28">2019.9.28</time>
