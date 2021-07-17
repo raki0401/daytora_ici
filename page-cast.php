@@ -11,7 +11,8 @@
       </div><!-- /.mainvisual-text2 -->
     </div><!-- /.news-archive-imgs -->
     <div class="mainvisual-common-btn">
-      <a href="<?php $page_id = get_page_by_path('inquiry'); echo esc_url(get_permalink($page_id)); ?>" class="btn-red mainvisual-common-btn-red">チケット予約サイトへ</a><!-- /.btn-red -->
+      <a href="<?php $page_id = get_page_by_path('inquiry');
+                echo esc_url(get_permalink($page_id)); ?>" class="btn-red mainvisual-common-btn-red">チケット予約サイトへ</a><!-- /.btn-red -->
     </div><!-- /.top-btn -->
   </div><!-- /.inner news-archive-inner -->
 </section>
@@ -87,64 +88,14 @@
             <?php endforeach; ?>
           <?php endwhile;  ?>
         <?php endif;  ?>
-        
+
       </ul><!-- /.page-cast-bottom-items -->
     </div><!-- /.inner page-cast-bottom-inner -->
   </section><!-- /.page-cast-bottom -->
 
+  <?php get_template_part('template-parts/parts-schedule'); ?>
 
+  <?php get_footer(); ?>
+  </body>
 
-
-
-
-
-  <section class="schedule" id="inquiry">
-    <div class="inner schedule-inner">
-      <div class="schedule-top">
-        <h2 class="section-title schedule-title">SCHEDULE</h2><!-- /.section-title -->
-        <ul class="schedule-nav">
-          <li class="schedule-nav-item">
-            <p>2020.7.04</p>
-            <p>17:00開演</p>
-            <p>中野ZERO大ホール</p>
-            <a href="#" class="schedule-nav-item-link">チケット予約受付中</a>
-          </li><!-- /.schedule-nav-item -->
-          <li class="schedule-nav-item">
-            <p>2020.7.04</p>
-            <p>17:00開演</p>
-            <p>中野ZERO大ホール</p>
-            <a href="#" class="schedule-nav-item-link">チケット予約受付中</a>
-          </li><!-- /.schedule-nav-item -->
-          <li class="schedule-nav-item">
-            <p>2020.7.04</p>
-            <p>17:00開演</p>
-            <p>中野ZERO大ホール</p>
-            <a href="#" class="schedule-nav-item-link">チケット予約受付中</a>
-          </li><!-- /.schedule-nav-item -->
-          <li class="schedule-nav-item">
-            <p>2020.7.04</p>
-            <p>17:00開演</p>
-            <p>中野ZERO大ホール</p>
-            <a href="#" class="schedule-nav-item-link">チケット予約受付中</a>
-          </li><!-- /.schedule-nav-item -->
-        </ul><!-- /.schedule-nav -->
-      </div><!-- /.footer-top -->
-    </div><!-- /.inner -->
-    <div class="schedule-btns">
-      <a href="#" class="btn-brown schedule-brown-btn">お問い合わせはこちら</a><!-- /.btn-brown -->
-      <a href="#" class="btn-red schedule-red-btn">チケット予約サイトへ</a><!-- /.btn-red -->
-    </div><!-- /.schedule-btns -->
-  </section><!-- /.schedule -->
-
-</main>
-<div id="page-top"><a href="#"><img src="../img/totop.png" alt=""></a></div>
-
-<footer>
-  <p>Copyright © 2019 完全版マハーバーラタ All Rights Reserved.</p>
-</footer>
-
-
-<?php get_footer(); ?>
-</body>
-
-</html>
+  </html>

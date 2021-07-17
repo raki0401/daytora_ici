@@ -11,7 +11,8 @@
       </div><!-- /.mainvisual-text2 -->
     </div><!-- /.news-archive-imgs -->
     <div class="mainvisual-common-btn">
-      <a href="<?php $page_id = get_page_by_path('inquiry'); echo esc_url(get_permalink($page_id)); ?>" class="btn-red mainvisual-common-btn-red">チケット予約サイトへ</a><!-- /.btn-red -->
+      <a href="<?php $page_id = get_page_by_path('inquiry');
+                echo esc_url(get_permalink($page_id)); ?>" class="btn-red mainvisual-common-btn-red">チケット予約サイトへ</a><!-- /.btn-red -->
     </div><!-- /.top-btn -->
   </div><!-- /.inner news-archive-inner -->
 </section>
@@ -31,7 +32,7 @@
       <div class="contact__item">
         <p class="inquiry-text">小池博史ブリッジプロジェクトにご興味を持っていただきまして、ありがとうございます。<br> 公演に関するお問い合わせ、公演・ワークショップのご依頼など、<br>
           お電話（03-3385-2066）か、下記フォームよりお気軽にお問い合わせください。</p><!-- /.inquiry-text -->
-      <?php echo do_shortcode('[contact-form-7 id="120" title="卒業制作フォーム"]'); ?>
+        <?php echo do_shortcode('[contact-form-7 id="120" title="卒業制作フォーム"]'); ?>
 
 
         <!-- <form action="#">
@@ -85,64 +86,14 @@
     </div><!-- /.inner inquiry-inner -->
   </section><!-- /.inquiry -->
 
+  <?php get_template_part('template-parts/parts-schedule'); ?>
 
+  <script>
+    document.addEventListener('wpcf7mailsent', function(event) {
+      location = '<?php get_template_directory_uri(); ?>/confilm';
+    }, false);
+  </script>
+  <?php get_footer(); ?>
+  </body>
 
-
-
-
-
-
-  <section class="schedule" id="inquiry">
-    <div class="inner schedule-inner">
-      <div class="schedule-top">
-        <h2 class="section-title schedule-title">SCHEDULE</h2><!-- /.section-title -->
-        <ul class="schedule-nav">
-          <li class="schedule-nav-item">
-            <p>2020.7.04</p>
-            <p>17:00開演</p>
-            <p>中野ZERO大ホール</p>
-            <a href="#" class="schedule-nav-item-link">チケット予約受付中</a>
-          </li><!-- /.schedule-nav-item -->
-          <li class="schedule-nav-item">
-            <p>2020.7.04</p>
-            <p>17:00開演</p>
-            <p>中野ZERO大ホール</p>
-            <a href="#" class="schedule-nav-item-link">チケット予約受付中</a>
-          </li><!-- /.schedule-nav-item -->
-          <li class="schedule-nav-item">
-            <p>2020.7.04</p>
-            <p>17:00開演</p>
-            <p>中野ZERO大ホール</p>
-            <a href="#" class="schedule-nav-item-link">チケット予約受付中</a>
-          </li><!-- /.schedule-nav-item -->
-          <li class="schedule-nav-item">
-            <p>2020.7.04</p>
-            <p>17:00開演</p>
-            <p>中野ZERO大ホール</p>
-            <a href="#" class="schedule-nav-item-link">チケット予約受付中</a>
-          </li><!-- /.schedule-nav-item -->
-        </ul><!-- /.schedule-nav -->
-      </div><!-- /.footer-top -->
-    </div><!-- /.inner -->
-    <div class="schedule-btns">
-      <a href="#" class="btn-brown schedule-brown-btn">お問い合わせはこちら</a><!-- /.btn-brown -->
-      <a href="#" class="btn-red schedule-red-btn">チケット予約サイトへ</a><!-- /.btn-red -->
-    </div><!-- /.schedule-btns -->
-  </section><!-- /.schedule -->
-
-</main>
-<div id="page-top"><a href="#"><img src="../img/totop.png" alt=""></a></div>
-
-<footer>
-  <p>Copyright © 2019 完全版マハーバーラタ All Rights Reserved.</p>
-</footer>
-
-<script>
-  document.addEventListener('wpcf7mailsent', function(event) {
-    location = '<?php get_template_directory_uri(); ?>/confilm';
-  }, false);
-</script>
-<?php get_footer(); ?>
-</body>
-
-</html>
+  </html>

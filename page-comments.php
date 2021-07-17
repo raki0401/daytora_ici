@@ -11,7 +11,8 @@
       </div><!-- /.mainvisual-text2 -->
     </div><!-- /.news-archive-imgs -->
     <div class="mainvisual-common-btn">
-      <a href="<?php $page_id = get_page_by_path('inquiry'); echo esc_url(get_permalink($page_id)); ?>" class="btn-red mainvisual-common-btn-red">チケット予約サイトへ</a><!-- /.btn-red -->
+      <a href="<?php $page_id = get_page_by_path('inquiry');
+                echo esc_url(get_permalink($page_id)); ?>" class="btn-red mainvisual-common-btn-red">チケット予約サイトへ</a><!-- /.btn-red -->
     </div><!-- /.top-btn -->
   </div><!-- /.inner news-archive-inner -->
 </section>
@@ -19,8 +20,9 @@
 <main>
   <div class="inner">
     <div class="breadcrumb">
-    <?php bcn_display(); ?>
+      <?php bcn_display(); ?>
     </div>
+  </div>
 
     <section id="comments" class="comments page-comments">
       <div class="inner">
@@ -33,85 +35,37 @@
             「文に非ず、其の義に非ず、唯だ一部の意のみ。」<br>
             まずこの聖句が浮かんだ。境界線に立つ人類。超越する意志。小池博史氏の心象が生み出したアバターが乱舞しながら深層意識に波紋を起こしてゆく。
           </div><!-- /.comments-text -->
-         
+
         </div><!-- /.comments-content -->
       </div><!-- /.inner -->
     </section><!-- /.comments -->
 
     <section class="comments-contents">
-      <div class="comments-items">
+      <div class="inner">
 
-        <?php if (have_posts()) :  ?>
-          <?php while (have_posts()) :  the_post();  ?>
-          <?php $comments = SCF::get('good-comments');   ?>
-          <?php foreach($comments as $comment): ?>
-            <div class="comments-item">
-              <div class="comments-name"><?php echo $comment['name']; ?></div><!-- /.comments-item-title -->
-              <p class="comments-subname"><?php echo $comment['jobs']; ?></p><!-- /.comments-item-subname -->
-              <p class="comments-item-text"><?php echo $comment['comments-text']; ?></p><!-- /.comments-text -->
-            </div><!-- /.comments-item -->
-            <?php endforeach; ?>
-          <?php endwhile;  ?>
-        <?php endif;  ?>
-
-        
-      </div><!-- /.comments-items -->
+        <div class="comments-items">
+  
+          <?php if (have_posts()) :  ?>
+            <?php while (have_posts()) :  the_post();  ?>
+              <?php $comments = SCF::get('good-comments');   ?>
+              <?php foreach ($comments as $comment) : ?>
+                <div class="comments-item">
+                  <div class="comments-name"><?php echo $comment['name']; ?></div><!-- /.comments-item-title -->
+                  <p class="comments-subname"><?php echo $comment['jobs']; ?></p><!-- /.comments-item-subname -->
+                  <p class="comments-item-text"><?php echo $comment['comments-text']; ?></p><!-- /.comments-text -->
+                </div><!-- /.comments-item -->
+              <?php endforeach; ?>
+            <?php endwhile;  ?>
+          <?php endif;  ?>
+  
+  
+        </div><!-- /.comments-items -->
+      </div><!-- /.inner -->
     </section><!-- /.page-comments-body -->
 
+    <?php get_template_part('template-parts/parts-schedule'); ?>
 
+    <?php get_footer(); ?>
+    </body>
 
-
-
-
-
-    <section class="schedule" id="inquiry">
-      <div class="inner schedule-inner">
-        <div class="schedule-top">
-          <h2 class="section-title schedule-title">SCHEDULE</h2><!-- /.section-title -->
-          <ul class="schedule-nav">
-            <li class="schedule-nav-item">
-              <p>2020.7.04</p>
-              <p>17:00開演</p>
-              <p>中野ZERO大ホール</p>
-              <a href="#" class="schedule-nav-item-link">チケット予約受付中</a>
-            </li><!-- /.schedule-nav-item -->
-            <li class="schedule-nav-item">
-              <p>2020.7.04</p>
-              <p>17:00開演</p>
-              <p>中野ZERO大ホール</p>
-              <a href="#" class="schedule-nav-item-link">チケット予約受付中</a>
-            </li><!-- /.schedule-nav-item -->
-            <li class="schedule-nav-item">
-              <p>2020.7.04</p>
-              <p>17:00開演</p>
-              <p>中野ZERO大ホール</p>
-              <a href="#" class="schedule-nav-item-link">チケット予約受付中</a>
-            </li><!-- /.schedule-nav-item -->
-            <li class="schedule-nav-item">
-              <p>2020.7.04</p>
-              <p>17:00開演</p>
-              <p>中野ZERO大ホール</p>
-              <a href="#" class="schedule-nav-item-link">チケット予約受付中</a>
-            </li><!-- /.schedule-nav-item -->
-          </ul><!-- /.schedule-nav -->
-        </div><!-- /.footer-top -->
-      </div><!-- /.inner -->
-      <div class="schedule-btns">
-        <a href="#" class="btn-brown schedule-brown-btn">お問い合わせはこちら</a><!-- /.btn-brown -->
-        <a href="#" class="btn-red schedule-red-btn">チケット予約サイトへ</a><!-- /.btn-red -->
-      </div><!-- /.schedule-btns -->
-    </section><!-- /.schedule -->
-  </div>
-  <!--inner-->
-</main>
-<div id="page-top"><a href="#"><img src="../img/totop.png" alt=""></a></div>
-
-<footer>
-  <p>Copyright © 2019 完全版マハーバーラタ All Rights Reserved.</p>
-</footer>
-
-
-<?php get_footer(); ?>
-</body>
-
-</html>
+    </html>
