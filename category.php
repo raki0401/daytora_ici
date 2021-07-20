@@ -11,8 +11,7 @@
       </div><!-- /.mainvisual-text2 -->
     </div><!-- /.news-archive-imgs -->
     <div class="mainvisual-common-btn">
-      <a href="<?php $page_id = get_page_by_path('inquiry');
-                echo esc_url(get_permalink($page_id)); ?>" class="btn-red mainvisual-common-btn-red">チケット予約サイトへ</a><!-- /.btn-red -->
+      <a href="#" class="btn-red mainvisual-common-btn-red">チケット予約サイトへ</a><!-- /.btn-red -->
     </div><!-- /.top-btn -->
   </div><!-- /.inner news-archive-inner -->
 </section>
@@ -41,7 +40,13 @@
             <div class="archive-news-item-bottom">
               <!-- <time datetime="2019-09-30">2019.9.30</time> -->
               <?php the_time('Y.m.j');  ?>
-              <h4><?php the_title(); ?></h4>
+              <h4><?php if (mb_strlen($post->post_title, 'UTF-8') > 30) {
+                        $title = mb_substr($post->post_title, 0, 30, 'UTF-8');
+                        echo $title . '……';
+                      } else {
+                        echo $post->post_title;
+                      }
+                      ?></h4>
             </div><!-- /.archive-news-item-bottom -->
           </a><!-- /.archive-archive-news-item -->
 

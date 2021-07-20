@@ -22,6 +22,11 @@
 
 .news-img {
   max-width: 100%;
+  height: 140px;
+  object-fit: cover;
+  @include mq(sp){
+    height: auto;
+  }
 }
 
 .news-item:nth-child(4){

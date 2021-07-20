@@ -71,4 +71,5 @@ function twpp_change_posts_per_page( $query ) {
 }
 add_action( 'pre_get_posts', 'twpp_change_posts_per_page' );
 
-add_image_size( '4et5', 156, 88, true );
+// add_image_size( '4et5', 156, 88, true );
+add_image_size( 'single', 250,140, true );

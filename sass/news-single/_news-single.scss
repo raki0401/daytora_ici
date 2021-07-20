@@ -4,18 +4,31 @@
 
 .news-single-item{
   margin-bottom: 30.29px;
+  width: 100%;
+  margin: 0 auto;
 }
 
+// .news-single-img{
+//   width: 100%;
+//   height: 100%;
+//   vertical-align: bottom;
+// }
+
 .news-single-img{
+  max-width: 810px;
   width: 100%;
-  height: 100%;
-  vertical-align: bottom;
+  img{
+    // object-fit: cover;
+    width: 100%;
+    height: auto;
+  }
 }
 
 .middle-text{
   background-color: #000;
   color: $color-white;
   padding-top: 15px;
+  margin-top: -5px;
   time{
     font-size: 12px;
     padding-left: 30px;

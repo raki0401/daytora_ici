@@ -31,11 +31,11 @@
     </div><!-- /.footer-top -->
   </div><!-- /.inner -->
   <div class="schedule-btns">
-    <a href="#" class="btn-brown schedule-brown-btn">お問い合わせはこちら</a><!-- /.btn-brown -->
     <a href="<?php // スラッグからIDを取得して表示 
               $page_id = get_page_by_path('inquiry');
               echo esc_url(get_permalink($page_id)); //表示したいページのIDを指定する
-              ?>" class="btn-red schedule-red-btn">チケット予約サイトへ</a><!-- /.btn-red -->
+              ?>" class="btn-brown schedule-brown-btn">お問い合わせはこちら</a><!-- /.btn-brown -->
+    <a href="#" class="btn-red schedule-red-btn">チケット予約サイトへ</a><!-- /.btn-red -->
   </div><!-- /.schedule-btns -->
 </section><!-- /.schedule -->
 

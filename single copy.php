@@ -28,14 +28,17 @@
       <div class="section-title news-single-title">NEWS</div><!-- /.section-title -->
       <div class="news-single-item">
         <!-- <div class="news-single-img-wrap"> -->
-        <div class="news-single-img">
-          <?php the_post_thumbnail(); ?>
-
-        </div><!-- /.new-single-img -->
+        <?php
+        if (has_post_thumbnail()) :
+          $id = get_post_thumbnail_id();
+          $img = wp_get_attachment_image_src($id, 'full');
+        endif;
+        ?>
+        <img src="<?php echo $img[0]; ?>" alt="">
 
         <div class="middle-text">
-          <time datetime="2019-9-30"><?php the_time('Y.m.j');  ?></time>
-          
+          <!-- <time datetime="2019-9-30">2019.9.30</time> -->
+          <?php the_time('Y.m.j');  ?>
           <p><?php the_title(); ?></p>
         </div><!-- /.middle-text -->
         <div class="bottom-text">
