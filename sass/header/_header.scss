@@ -14,20 +14,24 @@ header {
 
 .header-nav ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   padding: 23px 0 22px;
   // max-width: 652px;
   // width: 100%;
-  width: 600px;
+  // width: 600px;
   // min-width: 600px;
   margin: 0 auto;
 
   li {
     font-size: 22px;
     line-height: 20px;
-    // padding-top: 1px;
+    padding-right: 41.5px;
+    padding-top: 1px;
     &:last-child {
       margin: 0;
+    }
+    &:first-child{
+      padding-left: 46px;
     }
     @include mq-1000() {
       font-size: 18px;
@@ -35,6 +39,8 @@ header {
     }
   }
 }
+
+
 
 // .header-nav-top
 .header-nav ul li a {

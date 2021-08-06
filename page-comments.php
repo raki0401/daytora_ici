@@ -25,12 +25,12 @@
 
     <section id="comments" class="comments page-comments">
       <div class="inner">
-        <h2 class="section-title comments-title">COMMENTS</h2><!-- /.section-title -->
+        <h2 class="section-title comments-page-title">COMMENTS</h2><!-- /.section-title -->
         <p class="comments-text">舞台関係者のみならず各界著名人からコメントが届いています！</p><!-- /.comments-text -->
         <div class="comments-content">
-          <div class="comments-human-title">京都佛立ミュージアム館長<span><br class="sp-only"> 長松清潤</span></div>
+          <div class="comments-human-title wow fadeInUp">京都佛立ミュージアム館長<span><br class="sp-only"> 長松清潤</span></div>
           <!-- /.comments-text-title -->
-          <div class="comments-human-text">
+          <div class="comments-human-text wow fadeInUp">
             「文に非ず、其の義に非ず、唯だ一部の意のみ。」<br>
             まずこの聖句が浮かんだ。境界線に立つ人類。超越する意志。小池博史氏の心象が生み出したアバターが乱舞しながら深層意識に波紋を起こしてゆく。
           </div><!-- /.comments-text -->
@@ -48,7 +48,7 @@
             <?php while (have_posts()) :  the_post();  ?>
               <?php $comments = SCF::get('good-comments');   ?>
               <?php foreach ($comments as $comment) : ?>
-                <div class="comments-item">
+                <div class="comments-item wow fadeInUp" data-wow-delay="0.3s">
                   <div class="comments-name"><?php echo $comment['name']; ?></div><!-- /.comments-item-title -->
                   <p class="comments-subname"><?php echo $comment['jobs']; ?></p><!-- /.comments-item-subname -->
                   <p class="comments-item-text"><?php echo $comment['comments-text']; ?></p><!-- /.comments-text -->

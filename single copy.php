@@ -28,26 +28,24 @@
       <div class="section-title news-single-title">NEWS</div><!-- /.section-title -->
       <div class="news-single-item">
         <!-- <div class="news-single-img-wrap"> -->
-        <?php
-        if (has_post_thumbnail()) :
-          $id = get_post_thumbnail_id();
-          $img = wp_get_attachment_image_src($id, 'full');
-        endif;
-        ?>
-        <img src="<?php echo $img[0]; ?>" alt="">
+        <div class="news-single-img">
+          <?php the_post_thumbnail(); ?>
+
+        </div><!-- /.new-single-img -->
 
         <div class="middle-text">
-          <!-- <time datetime="2019-9-30">2019.9.30</time> -->
-          <?php the_time('Y.m.j');  ?>
+          <time datetime="2019-9-30"><?php the_time('Y.m.j');  ?></time>
+          
           <p><?php the_title(); ?></p>
         </div><!-- /.middle-text -->
         <div class="bottom-text">
-          <p><?php the_content(); ?></p>
+          <?php the_content(); ?>
         </div><!-- /.bottom-text -->
       </div><!-- /.news-single-item -->
     </div><!-- /.inner news-single-inner -->
   </section>
 
+  
   <div class="news-single-pagination">
     <div class="inner pagination-inner">
 

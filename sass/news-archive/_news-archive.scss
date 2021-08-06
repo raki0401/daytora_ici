@@ -1,5 +1,5 @@
 .archive-news {
-  margin-bottom: 62px;
+  margin-bottom: 34px;
 }
 
 // .archive-news-inner {
@@ -8,6 +8,8 @@
 
 .archive-news-title {
   margin-bottom: 27px;
+  letter-spacing: -0.05em;
+  padding-top: 8px;
 }
 
 .archive-news-items {
@@ -23,10 +25,10 @@
   width: 250px;
   height: 140px;
   object-fit: cover;
-  @include mq-900(){
+  @include mq-900() {
     width: 213px;
   }
-  @include mq(sp){
+  @include mq(sp) {
     height: auto;
   }
 
@@ -38,7 +40,7 @@
 .archive-news-item {
   width: calc(33.3% - 30px * 2 / 3);
   display: block;
-  &:nth-child(n+4){
+  &:nth-child(n + 4) {
     margin-top: 29.06px;
   }
   margin-right: 30px;
@@ -46,9 +48,14 @@
   &:nth-child(6),
   &:nth-child(9) {
     margin-right: 0;
-    @include mq(sp){
+    @include mq(sp) {
       margin: 0 auto;
     }
+  }
+  &:nth-child(7),
+  &:nth-child(8),
+  &:nth-child(9){
+    padding-top: 8px;
   }
   img {
     max-width: 100%;
@@ -61,13 +68,13 @@
   @include mq(sp) {
     width: 80%;
     // margin: 0;
-    margin:0 auto 30px;
-    
+    margin: 0 auto 30px;
   }
 }
 
-.archive-news-img{
-  @include mq(sp){
+.archive-news-img {
+  
+  @include mq(sp) {
     width: 100%;
   }
 }
@@ -80,7 +87,7 @@
   margin-top: -4px;
   height: 120px;
   background-color: $color-white;
-  padding: 14px 15px ;
+  padding: 18px 15px;
   @include mq(sp) {
     padding-top: 20px;
     padding-bottom: 14px;
@@ -93,27 +100,33 @@
   }
 }
 
-.news-pagination{
+.news-pagination {
   text-align: center;
+  padding-bottom: 2px;
   // display: flex;
-  span{
+  .page-numbers {
+    font-size: 12px;
     display: inline-block;
-    margin-right: 10px;
-    padding:6px 10px;
+    margin-right: 4px;
+    padding: 6px 10px;
     background-color: #000;
     color: $color-white;
     line-height: 16px;
-    &:last-child{
-
-      background-color: transparent;
-      border: solid 4px #000;
-      padding: 2px 6px;
-      color: #000;
-      font-weight: bold;
-
-    }
+    
   }
 }
 
+.page-numbers:hover{
+background-color: $color-white;
+color: #000;
+border: 2px solid;
+padding: 3px 7px;
+}
 
-
+.next,.prev{
+  background-color: transparent!important;
+  border: solid 2px #000!important;
+  padding: 4px 8.5px !important;
+  color: #000!important;
+  font-weight: bold;
+}

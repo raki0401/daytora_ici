@@ -4,12 +4,12 @@
 }
 
 .schedule-title {
-  padding-top: 26px;
- 
+  padding-top: 33px;
+ letter-spacing: -0.05em;
 }
 
 .schedule-nav {
-  padding: 23px 70px 57px 70px;
+  padding: 25px 70px 57px 70px;
   @include mq(sp) {
     padding: 10px 20px 20px 20px;
     // max-width: 550px;
@@ -17,9 +17,9 @@
   .schedule-nav-item {
     font-size: 20px;
     display: flex;
-
+    letter-spacing: -0.05em;
     justify-content: center;
-    padding-bottom: 18px;
+    padding-bottom: 24px;
     &:last-child {
       padding-bottom: 0;
     }
@@ -61,6 +61,7 @@
 .schedule-btns {
   display: flex;
   justify-content: center;
+  text-align: center;
   margin-bottom: 60px;
   @include mq-540() {
     display: block;
@@ -68,28 +69,33 @@
 }
 
 .schedule-brown-btn {
-  padding: 22px 42px;
+  // padding: 22px 42px;
   font-size: 13px;
+  width: 193px;
+  height: 60px;
+  line-height: 60px;
   @include mq(sp) {
     display: block;
-    width: 193px;
-    height: 60px;
     margin: 30px auto;
-    padding: 22px 0;
+    padding: 30px 0 22px ;
     text-align: center;
+    line-height: 0px;
+    padding-top: 30px;
   }
 }
 
 .schedule-red-btn {
-  padding: 22px 42px;
+  line-height: 60px;
+  // padding: 22px 42px;
   font-size: 13px;
-  margin-left: 60px;
+  margin-left: 30px;
+  width: 193px;
+  height: 60px;
   @include mq(sp) {
     display: block;
-    width: 193px;
-    height: 60px;
+    line-height: 0px;
     margin: 30px auto;
-    padding: 22px 0;
+    padding: 30px 0 22px;
     text-align: center;
   }
 }

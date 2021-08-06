@@ -1,16 +1,19 @@
 .comments {
-  padding-top: 55px;
+  padding-top: 65px;
   padding-bottom: 245px;
 }
 
 .comments-title {
   padding-bottom: 26px;
+  letter-spacing: -0.05em;
 }
 
 .comments-text {
+  font-family: ‘Noto Sans JP’, sans-serif;
   text-align: center;
+  letter-spacing: -0.13em;
   font-size: 24px;
-  padding-bottom: 30px;
+  padding-bottom: 34px;
   @include mq-900(){
     font-size: 22px;
   }
@@ -21,16 +24,17 @@
 
 .comments-content {
   // width: 100%;
-  // min-height: 214px;
-  padding-top: 44px;
+  height: 215px;
+  padding-top: 48px;
   padding-left: 32px;
-  padding-right: 32px;
+  // padding-right: 32px;
   background: url('../img/comment01.jpg') no-repeat center center / cover;
   color: $color-white;
   background-color: #000;
   @include mq(sp){
     background-position: top;
     padding-top: 45%;
+    padding-bottom: 250px;
     background-size: 100%;
   }
   
@@ -77,21 +81,27 @@
   width: 100%;
   @include mq-540(){
     font-size: 12px;
+    padding-right: 30px;
   }
 }
 
 .comments-btn{
+  // width: 115px;
   text-align: right;
-  margin-right: 14.29px;
-  margin-top: 16.9px;
-  height: 41px;
+  // margin-right: 14.29px;
+  margin-top: 1px;
+  height: 36px;
   @include mq-540(){
     margin-top: 30px;
     margin-right: 0;
+    display: block;
+    margin-left: auto;
     text-align: center;
   }
   .comments-btn-red{
-    padding: 8px 31px 9px;
+    margin-right: 14.3px;
+    padding: 7px 23px 8px;
+    
   }
 }
 

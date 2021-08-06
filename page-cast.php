@@ -3,7 +3,7 @@
 <section id="mainvisual-common" class="mainvisual-common">
   <div class="inner">
     <div class="mainvisual-common-imgs">
-      <div class="mainvisual-text1">
+      <div class="mainvisual-text1 ">
         <img class="mainvisual-text-left" src="<?php echo get_template_directory_uri(); ?>/img/top_text@2x.png" alt="">
       </div><!-- /.mainvisual-text1 -->
       <div class="mainvisual-text2">
@@ -18,7 +18,7 @@
 
 <main>
   <div class="inner">
-    <div class="breadcrumb">
+    <div class="breadcrumb cast-page-breadcrumb">
       <?php bcn_display(); ?>
     </div>
   </div>
@@ -35,10 +35,10 @@
               <?php $image = wp_get_attachment_image_src($cast['image'], 'large');  ?>
               <li class="cast-item col-md-4">
                 <img src="<?php echo $image[0]; ?>" alt="">
-                <p class="human"><span class="human1"><?php echo $cast['post']; ?></span><br><span class="human2"><?php echo $cast['name']; ?></span><br>
+                <p class="human wow fadeInUp" data-wow-delay="0.3s"><span class="human1"><?php echo $cast['post']; ?></span><br><span class="human2"><?php echo $cast['name']; ?></span><br>
                   <span class="human3"><?php echo $cast['job_category']; ?></span></p>
                 <!-- /.human -->
-                <p class="cast-item-text"><?php echo $cast['text']; ?></p><!-- /.cast-item-text -->
+                <p class="cast-item-text wow fadeInUp" data-wow-delay="0.5s"><?php echo $cast['text']; ?></p><!-- /.cast-item-text -->
               </li><!-- /.cast-item -->
             <?php endforeach; ?>
           <?php endwhile;  ?>
@@ -62,9 +62,9 @@
                 <div class="page-cast-img-wrap">
                   <img src="<?php echo $image2[0]; ?>" alt="" class="page-cast-img">
                 </div><!-- /.page-cast-img-wrap -->
-                <div class="page-cast-item-body">
+                <div class="page-cast-item-body wow fadeInUp" data-wow-delay="0.3s">
                   <p class="page-cast-head human1"><?php echo $cast2['post2']; ?><br><span class="page-cast-name"><?php echo $cast2['name2']; ?></span> <br><span class="human3"><?php echo $cast2['job_category2']; ?></span></p><br><!-- /.page-cast-head -->
-                  <p class="page-cast-text human3"><?php echo $cast2['text2']; ?></p><!-- /.page-cast-text -->
+                  <p class="page-cast-text human3"><?php echo nl2br($cast2['text2']); ?></p><!-- /.page-cast-text -->
                 </div><!-- /.page-cast-item-body -->
               </div><!-- /.page-cast-item -->
             <?php endforeach; ?>

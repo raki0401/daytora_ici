@@ -1,6 +1,6 @@
 .top {
-  background: url('../img/211@2x.jpg') no-repeat center center/cover;
-  // min-height: 60vh;
+  background: url("../img/211@2x.jpg") no-repeat center center/cover;
+  height: 520px;
 }
 
 .top-inner {
@@ -12,19 +12,19 @@
 
 .main-title {
   // text-align: center;
-  @include mq-950(){
+  @include mq-950() {
     text-align: center;
   }
   img {
     // margin-left: 110px;
     padding-top: 60px;
     width: 920px;
-    @include mq-950(){
+    @include mq-950() {
       width: 700px;
       padding-right: 40px;
       padding-left: 40px;
     }
-    @include mq(sp){
+    @include mq(sp) {
       width: 100%;
       padding: 40px 20px 20px;
     }
@@ -35,21 +35,20 @@
 }
 
 .top-text-left {
-
-  @include mq-950(){
+  @include mq-950() {
     text-align: center;
   }
   img {
     // margin-left: 110px;
-    padding-top: 184px;
+    padding-top: 175px;
     padding-bottom: 60px;
     width: 370px;
-    @include mq-950(){
+    @include mq-950() {
       width: 300px;
       padding-top: 40px;
       padding-bottom: 30px;
     }
-    @include mq(sp){
+    @include mq(sp) {
       padding-top: 20px;
       padding-bottom: 20px;
       max-width: 400px;
@@ -62,15 +61,14 @@
 
 .top-text-wrap {
   display: flex;
-  @include mq-950(){
+  @include mq-950() {
     display: block;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
   }
-  
 }
 .top-text-right {
   margin-left: 210px;
-  margin-top: 88px;
+  margin-top: 86px;
   color: $color-white;
   font-size: 14px;
   line-height: 22px;
@@ -78,49 +76,53 @@
 
   //   letter-spacing: -0.1em;
   // }
-  
-  @include mq-950(){
+
+  @include mq-950() {
     margin-top: 0;
     margin-left: 0;
     max-width: 650px;
     width: 100%;
     margin: 0 auto;
-    p{
+    p {
       padding: 0 40px;
-      @include mq(sp){
+      @include mq(sp) {
         font-size: 12px;
+        margin-bottom: 50px;
       }
     }
   }
 }
 
-.top-btn{
+.top-btn {
+  width: 200px;
+  height: 60px;
   position: absolute;
-  bottom: -30px;
+  bottom: -26px;
   right: 0;
-  margin-top: 30px;
+  // margin-top: 300px;
   text-align: right;
-  @include mq-950(){
+  @include mq-950() {
     right: 50px;
   }
-  @include mq(sp){
-    // right: 50%;
-    // transform: translateX(50%);
-    // margin-top: 10px;
-    
+  @include mq(sp) {
+    // width: 150px;
+    // height: 30px;
+    right: 50%;
+    transform: translateX(50%);
+    margin-top: 10px;
   }
-  .top-btn-red{
+  .top-btn-red {
+    font-size: 12px;
     text-align: center;
     line-height: 60px;
-    // width: 200px;
-    // height: 60px;
-    // display: inline-block;
-    padding: 21px 45px 19px;
-    @include mq-950(){
+    width: 100%;
+    display: block;
+    // padding: 25px 30px 16px;
+    @include mq-950() {
       font-size: 12px;
     }
-    @include mq(sp){
-      padding: 15px 20px 12px;
+    @include mq(sp) {
+      padding: 0px 40px ;
       font-size: 10px;
     }
   }

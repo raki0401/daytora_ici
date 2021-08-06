@@ -26,7 +26,7 @@
       <div class="introduction-sub-title">なぜ今「マハーバーラタ」なのか？</div><!-- /.introduction-sub-title -->
       <div class="introduction-text-wrap container">
         <div class="row">
-          <div class="introduction-text-left col-md">
+          <div class="introduction-text-left col-md wow bounceInDown">
             「平和」について改めて考えるストーリー全世界を司るものが神だとすれば、なぜ神であるクリシュナは、策を巡らしてまで、登場人物すべてを滅亡へと導いたのか？<br>
             それは、「戦い」そのものを廃絶しようとしたからだと考えられる。戦うことそのものへの虚しさ、「戦い」そのものの「悪」を問う物語が「マハーバーラタ」と言える。
             平和とは？私たちには何ができるのか？根源的な「平和」を希求する物語。</div><!-- /.introduction-text-left -->

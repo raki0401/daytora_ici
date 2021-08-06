@@ -2,16 +2,19 @@
 .mainvisual-common{
   background: url('../img/119@2x.jpg')no-repeat top center / cover;
   margin-bottom: 34.48px;
+  // padding-top: 30px;
   @include mq(sp){
     background: url('../img/211@2x.jpg')no-repeat center center/ cover;
     
   }
 }
 
+
+
 .mainvisual-common-imgs{
   display: flex;
   justify-content: space-between;
-  padding: 58px 0 54px;
+  padding: 58px 0 52px;
 
   .mainvisual-text1{
     width: 460px;
@@ -55,4 +58,8 @@
     padding: 11px 15px;
     font-size: 12px;
   }
+}
+
+.breadcrumb{
+  letter-spacing: -0.15em;
 }

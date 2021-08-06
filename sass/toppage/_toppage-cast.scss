@@ -1,8 +1,8 @@
 .cast{
   background-color: #FFFFFFE6;
-  padding-bottom: 30px;
+  // padding-bottom: 10px;
   position: relative;
-  height: 660px;
+  height: 650px;
   @include mq(sp){
     height: 1500px;
   }
@@ -22,16 +22,20 @@
 
 .cast-inner{
   position: absolute;
-  top: -189px;
+  top: -183px;
   right: 0;
   left: 0;
 }
+
+
 
 .cast-title{
   padding-bottom: 22px;
   @include mq(sp){
   }
 }
+
+
 
 .cast-items{
   display: flex;
@@ -52,12 +56,12 @@
     width: 220px;
     height: 220px;
     border-radius: 1000px;
-    // padding-bottom: 38.77px;
+    margin-left: 14px;
   }
 }
 
 .human{
-  padding-top: 38.77px;
+  padding-top: 33px;
   padding-bottom: 12.23px;
   text-align: center;
   line-height: 30px;
@@ -85,6 +89,10 @@
   text-align: center;
   margin: 0 auto ;
   width: 115.7px;
+  margin-top: 36px;
+  @include mq-900(){
+    margin-top: 0;
+  }
   .cast-btn-red{
     font-weight: 600;
     display: inline-block;

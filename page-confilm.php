@@ -28,7 +28,7 @@
     <div class="inner confilm-inner">
       <div class="section-title confilm-title">INQUIRY</div><!-- /.section-title confilm-title -->
       <div class="confilm-inquiry">
-        <p class="confilm-text">お問い合わせありがとうございました。 <br>メッセージは正常に送信されました。</p><!-- /.confilm-text -->
+        <p class="confilm-text wow fadeInUp">お問い合わせありがとうございました。 <br>メッセージは正常に送信されました。</p><!-- /.confilm-text -->
       </div><!-- / -->
     </div><!-- /.inner -->
   </section><!-- /.inquiry -->
@@ -49,7 +49,7 @@
         <?php if ($news_query->have_posts()) :  ?>
           <?php while ($news_query->have_posts()) :  $news_query->the_post();  ?>
 
-            <a href="<?php the_permalink(); ?>" class="news-item ">
+            <a href="<?php the_permalink(); ?>" class="news-item wow fadeInUp" data-wow-delay="0.3s">
               <div class="news-img">
                 <?php
                     if (has_post_thumbnail()) :

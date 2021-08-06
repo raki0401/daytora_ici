@@ -1,17 +1,19 @@
 .intro-inner{
-  margin-top: 60px;
+  // margin-top: 60px;
   background-color: rgba(255,255,255,0.29)!important;
   background: url('../img/sankaku@2x.png') no-repeat top left / 230px;
   // width: 85%;
   margin: 60px auto 56px;
-  padding-top: 26px;
+  padding-top: 36px;
+  letter-spacing: -0.15em;
   @include mq-900(){
     background-size: 25%;
   }
 }
 
 .introduction-title{
-  // padding-top: 26px;
+  letter-spacing: -0.06em;
+  padding-bottom: 8px;
   font-family: $font-family-title;
   @include mq-900(){
     font-size: 32px;
@@ -23,9 +25,11 @@
 
 .introduction-sub-title{
   font-size: 34px;
-  line-height: 46px;
+  line-height: 40px;
+  font-family: ‘Noto Sans JP’, sans-serif;
   text-align: center;
-  font-weight: 600;
+  font-weight: 300;
+  letter-spacing: -0.19em;
   @include mq-900(){
     font-size: 28px;
   }
@@ -36,7 +40,7 @@
 }
 
 .introduction-text-wrap{
-  padding: 25px 30px 30px;
+  padding: 26px 30px 30px;
   line-height: 1.75;
   font-size: 12px;
 }

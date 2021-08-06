@@ -25,7 +25,7 @@
 <section class="archive-news " id="archive-news">
   <div class="inner archive-news-inner">
     <h2 class="section-title archive-news-title">NEWS</h2><!-- /.section-title -->
-    <div class="archive-news-items ">
+    <div class="archive-news-items wow fadeInUp" data-wow-delay="0.2s">
       <?php if (have_posts()) :  ?>
         <?php while (have_posts()) :  the_post();  ?>
 
@@ -38,8 +38,8 @@
                   ?>
             </div><!-- /.archive-news-img -->
             <div class="archive-news-item-bottom">
-              <!-- <time datetime="2019-09-30">2019.9.30</time> -->
-              <?php the_time('Y.m.j');  ?>
+              <time datetime="2019-09-30"><?php the_time('Y.m.j');  ?></time>
+              
               <h4><?php if (mb_strlen($post->post_title, 'UTF-8') > 30) {
                         $title = mb_substr($post->post_title, 0, 30, 'UTF-8');
                         echo $title . '……';

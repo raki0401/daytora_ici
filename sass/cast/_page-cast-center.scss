@@ -1,7 +1,11 @@
+.page-cast-center{
+  padding-bottom: 11px;
+}
+
 .page-cast-center-items{
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   margin-bottom: 25.5px;
   @include mq(sp){
 // display: block;
@@ -14,8 +18,11 @@
   display: flex;
   margin-right: 30px;
   margin-top: 60.8px;
+  &:nth-child(n+3){
+    margin-top: 45px;
+  }
   &:nth-child(even){
-    margin-right: 0;
+    // margin-right: 10px;
     @include mq(sp){
       margin-right: auto;
       margin-left: auto;
@@ -38,6 +45,10 @@
 .page-cast-item-body{
   max-width: 250px;
   line-height: 1.5;
+}
+
+.page-cast-name{
+  font-size: 22.56px;
 }
 
 .human4{

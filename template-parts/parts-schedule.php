@@ -1,8 +1,8 @@
-<section class="schedule" id="inquiry">
+<section class="schedule comments-schedule" id="inquiry">
   <div class="inner schedule-inner">
     <div class="schedule-top">
-      <h2 class="section-title schedule-title">SCHEDULE</h2><!-- /.section-title -->
-      <ul class="schedule-nav">
+      <h2 class="section-title schedule-title-comments">SCHEDULE</h2><!-- /.section-title -->
+      <ul class="schedule-nav comments-schedule-nav">
         <li class="schedule-nav-item">
           <p>2020.7.04</p>
           <p>17:00開演</p>
@@ -39,7 +39,7 @@
   </div><!-- /.schedule-btns -->
 </section><!-- /.schedule -->
 
-<div id="page-top"><a href="#"><img src="../img/totop.png" alt=""></a></div>
+<div id="page-top"><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/totop.png" alt=""></a></div>
 
 <footer>
   <p>Copyright © 2019 完全版マハーバーラタ All Rights Reserved.</p>

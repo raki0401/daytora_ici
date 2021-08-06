@@ -28,7 +28,7 @@
     <h2 class="section-title inquiry-title">INQUIRY</h2><!-- /.section-title inquiry-title -->
     <div class="inner inquiry-inner">
 
-      <div class="contact__item">
+      <div class="contact__item wow fadeInUp" data-wow-delay="0.2s">
         <p class="inquiry-text">小池博史ブリッジプロジェクトにご興味を持っていただきまして、ありがとうございます。<br> 公演に関するお問い合わせ、公演・ワークショップのご依頼など、<br>
           お電話（03-3385-2066）か、下記フォームよりお気軽にお問い合わせください。</p><!-- /.inquiry-text -->
         <?php echo do_shortcode('[contact-form-7 id="120" title="卒業制作フォーム"]'); ?>

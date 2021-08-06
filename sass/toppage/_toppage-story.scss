@@ -1,7 +1,11 @@
 .story{
   background: url('../img/story-img@2x.jpg')no-repeat left center / cover;
-  padding-top: 26px;
-  padding-bottom: 50px;
+  padding-top: 35px;
+  // padding-bottom: 40px;
+  margin-top: -50px;
+  @include mq(sp){
+    margin-top: 100px;
+  }
 }
 
 .story-title{
@@ -9,18 +13,29 @@
   color: $color-white;
 }
 
-.story-text {
-  p{
-    line-height: 1.75;
-    margin-left: auto;
-    font-size: 12px;
-    color: $color-white;
+
+
+.story-text-body{
+  font-size: 12px;
+  color: $color-white;
+  margin-left: auto;
+  max-width: 340px;
+  line-height: 1.75;
+  letter-spacing: -0.1em;
+  margin-top: -5px;
+  @include mq(sp){
+    padding: 0 50px;
+    margin: 0 auto;
+    max-width: 600px;
   }
 }
 
 .story-btn{
-  padding-top: 50px;
-  text-align: right;
+  width: 115.7px;
+  padding-bottom: 42px;
+  margin-top: 57px;
+  // text-align: right;
+  margin-left: auto;
   @include mq(sp){
     text-align: center;
   }

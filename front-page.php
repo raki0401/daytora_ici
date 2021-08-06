@@ -22,9 +22,9 @@
 
 <section class="introduction">
   <div class="inner intro-inner">
-    <h2 class="section-title introduction-title">INTRODUCTION</h2><!-- /.introduvtion-title -->
-    <div class="introduction-sub-title">なぜ今「マハーバーラタ」なのか？</div><!-- /.introduction-sub-title -->
-    <div class="introduction-text-wrap container">
+    <h2 class="section-title introduction-title wow fadeInUp">INTRODUCTION</h2><!-- /.introduvtion-title -->
+    <div class="introduction-sub-title wow fadeInUp">なぜ今｢マハーバーラタ｣なのか？</div><!-- /.introduction-sub-title -->
+    <div class="introduction-text-wrap container wow fadeInUp" data-wow-delay="0.5s">
       <div class="row">
         <div class="introduction-text-left col-md">
           「平和」について改めて考えるストーリー全世界を司るものが神だとすれば、なぜ神であるクリシュナは、策を巡らしてまで、登場人物すべてを滅亡へと導いたのか？<br>
@@ -86,7 +86,7 @@
   <div class="inner">
     <h2 class="section-title story-title">STORY</h2><!-- /.section-title -->
     <div class="story-text row">
-      <p class="col-md-6">
+      <p class="story-text-body wow fadeInUp" data-wow-delay="0.5s">
         マハー（偉大な）、バーラタ（バラタ族）、つまり「偉大なバラタ族」の物語。神々が人間界を作り出すところから始まり、バラタ族の中のクル家とパーンドゥ家という二つの部族間の対立を巡るストーリー。神の血を引く個性豊かな登場人物たちによる差別、対立、欲望、嫉妬など、生の苦しみが描かれ、最終的には一族が破滅していく。
         世界的な文学作品古代ギリシャの「イーリアス」「オデュッセイア」と並ぶ世界三大叙事詩の一つに数えられており、「ラーマーヤナ」と双璧を成すインド二大叙事詩の一つ。原語はサンスクリット語であるが、全18巻、10万詩節を超えるその長さは聖書の約4倍と言われ、原典の日本語訳はいまだ完結していない。
         <!-- インドだけでなくアジア全般で広く知られた作品であり、TVドラマや映画の原案として使われることも多い。全編舞台化の難しさ日本では、イギリスの演出家ピーター・ブルックがワールドツアーの一環として1988年6月に銀座セゾン劇場で上演。三部作であったが、上演時間は9時間にも及んだ。
@@ -103,11 +103,11 @@
   <div class="inner">
     <h2 class="section-title comments-title">COMMENTS</h2><!-- /.section-title -->
     <p class="comments-text">舞台関係者のみならず各界著名人からコメントが届いています！</p><!-- /.comments-text -->
-    <div class="comments-content">
+    <div class="comments-content wow fadeInUp" data-wow-delay="0.5s">
       <div class="comments-human-title">京都佛立ミュージアム館長<span><br class="sp-only"> 長松清潤</span></div>
       <!-- /.comments-text-title -->
       <div class="comments-human-text">
-        「文に非ず、其の義に非ず、唯だ一部の意のみ。」<br>
+        ｢文に非ず、其の義に非ず、唯だ一部の意のみ。｣<br>
         まずこの聖句が浮かんだ。境界線に立つ人類。超越する意志。小池博史氏の心象が生み出したアバターが乱舞しながら深層意識に波紋を起こしてゆく。
       </div><!-- /.comments-text -->
       <div class="comments-btn">
@@ -120,7 +120,7 @@
 <section id="cast" class="cast">
   <div class="inner cast-inner">
     <h2 class="section-title cast-title">CAST</h2><!-- /.section-title -->
-    <ul class="cast-items row">
+    <ul class="cast-items row wow fadeInUp" data-wow-delay="0.5s">
       <li class="cast-item col-md-4">
         <img src="<?php echo get_template_directory_uri(); ?>/img/Layer 1@2x.jpg" alt="">
         <p class="human"><span class="human1">作・演出・振付・構成 </span><br><span class="human2">小池博史</span></p>
@@ -133,7 +133,7 @@
       <li class="cast-item col-md-4">
         <img src="<?php echo get_template_directory_uri(); ?>/img/Layer 0@2x.jpg" alt="">
         <p class="human"><span class="human1">出演</span> <br><span class="human2">白井さち子 </span><br><span class="human3">(バレエ、コンテンポラリーダンス)</span></p><!-- /.human -->
-        <p class="cast-item-text">7歳よりクラシックバレエを始める。 82年より6年間橘バレエ学校に在籍。 牧阿佐美に師事。 日本女子体育短期大学舞踊コース卒。 在籍中、太田順造にパントマイムを師事。
+        <p class="cast-item-text">7歳よりクラシックバレエを始める。 <br>82年より6年間橘バレエ学校に在籍。 牧阿佐美に師事。 日本女子体育短期大学舞踊コース卒。 在籍中、太田順造にパントマイムを師事。
           a href="#"89年よりパパ・タラフマラに参加。 以降国内外の公演にink 後身のパフォーマーのダンス指導にもあっている。
           パパ・タラフマラ作品「シンデレラ」においてシンデレラ役、「三人姉妹」次女役、「パパ・タラフマラの白雪姫」継母役などを好演。
           これまで約35カ国での公演に参加、そのパフォーマンスは世界各地で認められ、高く評価されている。</p><!-- /.cast-item-text -->
