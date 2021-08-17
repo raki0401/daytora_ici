@@ -2,6 +2,11 @@
   background-color: #efefef;
 }
 
+.inquiry-title{
+  padding-top: 8px;
+  letter-spacing: -0.06em;
+}
+
 .inquiry-text{
   font-size: 18px;
   line-height: 1.66;
@@ -11,7 +16,7 @@
 }
 
 .contact__item {
-  margin: 22px auto 0;
+  margin: 20px auto 0;
   padding: 30px 30px 22px 30px;
   color: #333333;
   // opacity: 0.5;
@@ -27,7 +32,7 @@
   margin: 0px;
 }
 .contact__control {
-  margin-top: 15.6px;
+  margin-top: 17.6px;
   display: flex;
   justify-content: flex-end;
   @include mq('sp') {
@@ -109,7 +114,9 @@
   }
 }
 .contact__submit {
-  margin-top: 30px;
+  margin: 30px auto 0 auto;
+  width: 200px;
+  height: 60px;
   text-align: center;
 }
 .form-input {
@@ -162,7 +169,7 @@
 }
 
 .contact-btn{
-  padding: 18px 82px;
+  padding: 21px 84px;
   border: none;
   font-size: 18px;
   @include mq(sp){
@@ -175,3 +182,4 @@
   font-weight: bold;
   text-align: center;
 }
+

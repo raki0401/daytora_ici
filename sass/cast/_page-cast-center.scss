@@ -7,6 +7,10 @@
   flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 25.5px;
+  @include mq-900(){
+    justify-content: space-around;
+    
+  }
   @include mq(sp){
 // display: block;
     // margin: 0 auto;
@@ -16,6 +20,7 @@
 
 .page-cast-item{
   display: flex;
+  
   margin-right: 30px;
   margin-top: 60.8px;
   &:nth-child(n+3){
@@ -27,6 +32,9 @@
       margin-right: auto;
       margin-left: auto;
     }
+  }
+  @include mq-900(){
+    display: block;
   }
   @include mq(sp){
     display: block;

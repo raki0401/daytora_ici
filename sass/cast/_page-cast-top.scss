@@ -1,6 +1,18 @@
 .page-cast-top{
   margin-top: 200px;
-  height: 613px;
+  // height: auto;
+  @include mq(sp){
+    height: auto;
+    padding-bottom: 50px;
+    margin-top: 20px;
+}
+}
+
+.page-cast-inner{
+  @include mq(sp){
+    position: static;
+    padding-top: 50px;
+  }
 }
 
 .cast-page-breadcrumb{

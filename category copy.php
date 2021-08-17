@@ -29,7 +29,7 @@
       <?php if (have_posts()) :  ?>
         <?php while (have_posts()) :  the_post();  ?>
           
-          <a href="<?php echo get_page_link(); ?>" class="archive-news-item ">
+          <a href="<?php the_permalink(); ?>" class="archive-news-item ">
             <div class="archive-news-img">
               <?php
                   if (has_post_thumbnail()) { // 投稿にアイキャッチ画像が割り当てられているかチェックします。

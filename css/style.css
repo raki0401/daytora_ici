@@ -631,7 +631,7 @@ header {
 }
 
 .news-title {
-  margin-bottom: 27px;
+  margin-bottom: 28px;
 }
 
 .news-items {
@@ -802,6 +802,8 @@ header {
 @media (max-width: 767px) {
   .news-btn {
     text-align: center !important;
+    position: static;
+    margin: 0 auto;
   }
 }
 
@@ -1133,7 +1135,11 @@ header {
 
 .schedule-title {
   padding-top: 33px;
-  letter-spacing: -0.05em;
+  letter-spacing: -0.15em;
+}
+
+.schedule-inquiry {
+  margin-top: 103px;
 }
 
 .schedule-nav {
@@ -1798,7 +1804,21 @@ body.page-id-54 span.bcn {
 
 .page-cast-top {
   margin-top: 200px;
-  height: 613px;
+}
+
+@media (max-width: 767px) {
+  .page-cast-top {
+    height: auto;
+    padding-bottom: 50px;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .page-cast-inner {
+    position: static;
+    padding-top: 50px;
+  }
 }
 
 .cast-page-breadcrumb {
@@ -1821,6 +1841,13 @@ body.page-id-54 span.bcn {
   margin-bottom: 25.5px;
 }
 
+@media (max-width: 900px) {
+  .page-cast-center-items {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
 .page-cast-item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1837,6 +1864,12 @@ body.page-id-54 span.bcn {
   .page-cast-item:nth-child(even) {
     margin-right: auto;
     margin-left: auto;
+  }
+}
+
+@media (max-width: 900px) {
+  .page-cast-item {
+    display: block;
   }
 }
 
@@ -1930,6 +1963,11 @@ body.page-id-54 span.bcn {
   background-color: #efefef;
 }
 
+.inquiry-title {
+  padding-top: 8px;
+  letter-spacing: -0.06em;
+}
+
 .inquiry-text {
   font-size: 18px;
   line-height: 1.66;
@@ -1942,7 +1980,7 @@ body.page-id-54 span.bcn {
 }
 
 .contact__item {
-  margin: 22px auto 0;
+  margin: 20px auto 0;
   padding: 30px 30px 22px 30px;
   color: #333333;
   background: rgba(255, 255, 255, 0.29);
@@ -1962,7 +2000,7 @@ body.page-id-54 span.bcn {
 }
 
 .contact__control {
-  margin-top: 15.6px;
+  margin-top: 17.6px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2079,7 +2117,9 @@ body.page-id-54 span.bcn {
 }
 
 .contact__submit {
-  margin-top: 30px;
+  margin: 30px auto 0 auto;
+  width: 200px;
+  height: 60px;
   text-align: center;
 }
 
@@ -2138,7 +2178,7 @@ body.page-id-54 span.bcn {
 }
 
 .contact-btn {
-  padding: 18px 82px;
+  padding: 21px 84px;
   border: none;
   font-size: 18px;
 }
@@ -2153,6 +2193,11 @@ body.page-id-54 span.bcn {
   background-color: #fff;
   font-weight: bold;
   text-align: center;
+}
+
+.confilm-title {
+  margin-top: 10px;
+  letter-spacing: -0.05em;
 }
 
 .confilm-inquiry {
@@ -2175,7 +2220,12 @@ body.page-id-54 span.bcn {
 }
 
 .confilm-news-title {
-  margin-top: 56px;
+  margin-top: 44px;
+  letter-spacing: -0.05em;
+}
+
+.confilm-schedule {
+  margin-top: -46px;
 }
 
 #page-top {
@@ -2212,4 +2262,20 @@ footer p {
   color: #fff;
   padding: 31px 0 33px;
   font-size: 12px;
+}
+
+.entry-404-btn {
+  width: 200px;
+  background-color: #C63205;
+  text-align: center;
+  margin-top: 25px;
+}
+
+.entry-404-btn a {
+  color: #fff;
+  font-size: 14px;
+}
+
+.entry-404 {
+  margin-bottom: 83px;
 }

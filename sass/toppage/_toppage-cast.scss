@@ -1,6 +1,6 @@
 .cast{
   background-color: #FFFFFFE6;
-  // padding-bottom: 10px;
+  
   position: relative;
   height: 650px;
   @include mq(sp){
@@ -21,6 +21,7 @@
 }
 
 .cast-inner{
+  // background-color: #FFFFFFE6;
   position: absolute;
   top: -183px;
   right: 0;

@@ -1,7 +1,7 @@
-<section class="schedule comments-schedule" id="inquiry">
+<section class="schedule comments-schedule " id="inquiry">
   <div class="inner schedule-inner">
     <div class="schedule-top">
-      <h2 class="section-title schedule-title-comments">SCHEDULE</h2><!-- /.section-title -->
+      <h2 class="section-title schedule-title-comments schedule-inquiry confilm-schedule">SCHEDULE</h2><!-- /.section-title -->
       <ul class="schedule-nav comments-schedule-nav">
         <li class="schedule-nav-item">
           <p>2020.7.04</p>

@@ -16,7 +16,7 @@
   </div><!-- /.inner news-archive-inner -->
 </section>
 
-<main>
+
   <div class="inner">
     <div class="breadcrumb cast-page-breadcrumb">
       <?php bcn_display(); ?>
@@ -25,7 +25,9 @@
   <!--inner-->
 
   <section id="cast" class="cast page-cast-top">
-    <div class="inner cast-inner">
+
+    <div class="inner cast-inner page-cast-inner">
+
       <h2 class="section-title cast-title">CAST</h2><!-- /.section-title -->
       <ul class="cast-items row">
         <?php if (have_posts()) :  ?>
@@ -47,6 +49,7 @@
       </ul><!-- /.cast-items -->
 
     </div><!-- /.inner -->
+
   </section><!-- /.cast -->
 
   <div class="page-cast-center">

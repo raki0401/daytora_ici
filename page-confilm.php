@@ -4,10 +4,10 @@
   <div class="inner">
     <div class="mainvisual-common-imgs">
       <div class="mainvisual-text1">
-        <img class="mainvisual-text-left" src="../img/top_text@2x.png" alt="">
+        <img class="mainvisual-text-left" src="<?php echo get_template_directory_uri(); ?>/img/top_text@2x.png" alt="">
       </div><!-- /.mainvisual-text1 -->
       <div class="mainvisual-text2">
-        <img class="mainvisual-text-right" src="../img/top_text_left@2x.png" alt="">
+        <img class="mainvisual-text-right" src="<?php echo get_template_directory_uri(); ?>/img/top_text_left@2x.png" alt="">
       </div><!-- /.mainvisual-text2 -->
     </div><!-- /.news-archive-imgs -->
     <div class="mainvisual-common-btn">
@@ -33,7 +33,7 @@
     </div><!-- /.inner -->
   </section><!-- /.inquiry -->
 
-  <section id="news" class="news ">
+  <section id="news" class="news latest-news">
     <div class="inner news-inner">
       <h2 class="section-title news-title confilm-news-title">LATEST NEWS</h2><!-- /.section-title -->
       <div class="news-items ">
